@@ -1,0 +1,874 @@
+[
+  {
+    "id": 1,
+    "nome": "Abacate",
+    "descricao": "Produzida por semente",
+    "preco": 10,
+    "imagem": "imagens/abacate.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 2,
+    "nome": "Abacate",
+    "descricao": "Enxertada",
+    "preco": 36,
+    "imagem": "imagens/abacate.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 3,
+    "nome": "Abricó de praia",
+    "descricao": "M",
+    "preco": 80,
+    "imagem": "imagens/abrico_de_praia.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 4,
+    "nome": "Abricó de praia",
+    "descricao": "Gg",
+    "preco": 160,
+    "imagem": "imagens/abrico_de_praia.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 5,
+    "nome": "Abricó de macaco",
+    "descricao": "Muda de alta qualidade",
+    "preco": 100,
+    "imagem": "imagens/abrico_de_macaco.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 6,
+    "nome": "Açaí",
+    "descricao": "Do pará p",
+    "preco": 14,
+    "imagem": "imagens/acai.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 7,
+    "nome": "Achachairu",
+    "descricao": "Muda de alta qualidade",
+    "preco": 80,
+    "imagem": "imagens/achachairu.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 8,
+    "nome": "Acerola",
+    "descricao": "Enxertada",
+    "preco": 14,
+    "imagem": "imagens/acerola.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 9,
+    "nome": "Abiu",
+    "descricao": "Amarelo",
+    "preco": 70,
+    "imagem": "imagens/abiu.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 10,
+    "nome": "Abiu",
+    "descricao": "Verde",
+    "preco": 20,
+    "imagem": "imagens/abiu.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 11,
+    "nome": "Ameixa",
+    "descricao": "Planta adulta",
+    "preco": 120,
+    "imagem": "imagens/ameixa.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 12,
+    "nome": "Amora",
+    "descricao": "Gigante",
+    "preco": 14,
+    "imagem": "imagens/amora.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 13,
+    "nome": "Araçá-boi",
+    "descricao": "Muda de alta qualidade",
+    "preco": 70,
+    "imagem": "imagens/araca_boi.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 14,
+    "nome": "Araticum",
+    "descricao": "Muda de alta qualidade",
+    "preco": 20,
+    "imagem": "imagens/araticum.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 15,
+    "nome": "Banana prata",
+    "descricao": "Muda de alta qualidade",
+    "preco": 30,
+    "imagem": "imagens/banana_prata.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 16,
+    "nome": "Banana-da-terra (Pacovan)",
+    "descricao": "Muda de alta qualidade",
+    "preco": 30,
+    "imagem": "imagens/banana_da_terra_pacovan.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 17,
+    "nome": "Café Conilon",
+    "descricao": "Muda de alta qualidade",
+    "preco": 14,
+    "imagem": "imagens/cafe_conilon.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 18,
+    "nome": "Cagaita",
+    "descricao": "Muda de alta qualidade",
+    "preco": 80,
+    "imagem": "imagens/cagaita.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 19,
+    "nome": "Cajá-manga",
+    "descricao": "Muda de alta qualidade",
+    "preco": 20,
+    "imagem": "imagens/caja_manga.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 20,
+    "nome": "Cajá-mirim",
+    "descricao": "Planta adulta",
+    "preco": 36,
+    "imagem": "imagens/caja_mirim.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 21,
+    "nome": "Camu-camu",
+    "descricao": "Muda de alta qualidade",
+    "preco": 70,
+    "imagem": "imagens/camu_camu.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 22,
+    "nome": "Cabeludinha",
+    "descricao": "Muda de alta qualidade",
+    "preco": 70,
+    "imagem": "imagens/cabeludinha.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 23,
+    "nome": "Cacau",
+    "descricao": "Muda de alta qualidade",
+    "preco": 10,
+    "imagem": "imagens/cacau.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 24,
+    "nome": "Caju anão",
+    "descricao": "Produção precoce",
+    "preco": 14,
+    "imagem": "imagens/caju_anao.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 25,
+    "nome": "Cambucá amarela",
+    "descricao": "Gigante",
+    "preco": 120,
+    "imagem": "imagens/cambuca_amarela.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 26,
+    "nome": "Carambola",
+    "descricao": "Produzida por semente",
+    "preco": 14,
+    "imagem": "imagens/carambola.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 27,
+    "nome": "Carambola",
+    "descricao": "Sacolão",
+    "preco": 40,
+    "imagem": "imagens/carambola.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 28,
+    "nome": "Caqui",
+    "descricao": "Planta adulta",
+    "preco": 120,
+    "imagem": "imagens/caqui.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 29,
+    "nome": "Cereja europeia",
+    "descricao": "Enxertada",
+    "preco": 120,
+    "imagem": "imagens/cereja_europeia.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 30,
+    "nome": "Cereja deadagascar",
+    "descricao": "M",
+    "preco": 80,
+    "imagem": "imagens/cereja_deadagascar.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 31,
+    "nome": "Cereja-do-Rio-Grande",
+    "descricao": "Muda de alta qualidade",
+    "preco": 80,
+    "imagem": "imagens/cereja_do_rio_grande.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 32,
+    "nome": "Seriguela",
+    "descricao": "Produzida por estaquia",
+    "preco": 14,
+    "imagem": "imagens/seriguela.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 33,
+    "nome": "Coqueiro anão",
+    "descricao": "Produção precoce",
+    "preco": 20,
+    "imagem": "imagens/coqueiro_anao.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 34,
+    "nome": "Canela",
+    "descricao": "Muda de alta qualidade",
+    "preco": 16,
+    "imagem": "imagens/canela.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 35,
+    "nome": "Cravo-da-Índia",
+    "descricao": "Muda de alta qualidade",
+    "preco": 16,
+    "imagem": "imagens/cravo_da_india.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 36,
+    "nome": "Figo",
+    "descricao": "Produzida por estaquia",
+    "preco": 36,
+    "imagem": "imagens/figo.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 37,
+    "nome": "Fruta-do-milagre",
+    "descricao": "P",
+    "preco": 50,
+    "imagem": "imagens/fruta_do_milagre.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 38,
+    "nome": "Fruta-do-milagre",
+    "descricao": "Planta adulta",
+    "preco": 180,
+    "imagem": "imagens/fruta_do_milagre.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 39,
+    "nome": "Fruta-do-sabiá",
+    "descricao": "Muda de alta qualidade",
+    "preco": 70,
+    "imagem": "imagens/fruta_do_sabia.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 40,
+    "nome": "Gabiroba",
+    "descricao": "Muda de alta qualidade",
+    "preco": 70,
+    "imagem": "imagens/gabiroba.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 41,
+    "nome": "Goiaba branca",
+    "descricao": "Muda de alta qualidade",
+    "preco": 14,
+    "imagem": "imagens/goiaba_branca.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 42,
+    "nome": "Goiabaaluma",
+    "descricao": "Produzida por semente",
+    "preco": 10,
+    "imagem": "imagens/goiabaaluma.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 43,
+    "nome": "Goiabaaluma",
+    "descricao": "Produzida por estaquia",
+    "preco": 14,
+    "imagem": "imagens/goiabaaluma.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 44,
+    "nome": "Goiaba tailandesa",
+    "descricao": "Produzida por estaquia",
+    "preco": 24,
+    "imagem": "imagens/goiaba_tailandesa.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 45,
+    "nome": "Goiaba",
+    "descricao": "Roxa",
+    "preco": 50,
+    "imagem": "imagens/goiaba.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 46,
+    "nome": "Grumixama",
+    "descricao": "Muda de alta qualidade",
+    "preco": 80,
+    "imagem": "imagens/grumixama.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 47,
+    "nome": "Groselha",
+    "descricao": "Verde",
+    "preco": 80,
+    "imagem": "imagens/groselha.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 48,
+    "nome": "Guaraná",
+    "descricao": "Muda de alta qualidade",
+    "preco": 16,
+    "imagem": "imagens/guarana.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 49,
+    "nome": "Graviola",
+    "descricao": "Produzida por semente",
+    "preco": 14,
+    "imagem": "imagens/graviola.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 50,
+    "nome": "Jabuticaba Sabará",
+    "descricao": "Muda de alta qualidade",
+    "preco": 30,
+    "imagem": "imagens/jabuticaba_sabara.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 51,
+    "nome": "Jabuticaba",
+    "descricao": "Híbrida",
+    "preco": 30,
+    "imagem": "imagens/jabuticaba.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 52,
+    "nome": "Jabuticaba",
+    "descricao": "Híbrida",
+    "preco": 80,
+    "imagem": "imagens/jabuticaba.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 53,
+    "nome": "Jabuticabeira",
+    "descricao": "Planta adulta",
+    "preco": 180,
+    "imagem": "imagens/jabuticabeira.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 54,
+    "nome": "Jabuticaba Olho de Boi",
+    "descricao": "Muda de alta qualidade",
+    "preco": 40,
+    "imagem": "imagens/jabuticaba_olho_de_boi.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 55,
+    "nome": "Ingá",
+    "descricao": "Muda de alta qualidade",
+    "preco": 70,
+    "imagem": "imagens/inga.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 56,
+    "nome": "Jaca dura",
+    "descricao": "Produzida por semente",
+    "preco": 12,
+    "imagem": "imagens/jaca_dura.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 57,
+    "nome": "Jaca dura",
+    "descricao": "Enxertada",
+    "preco": 100,
+    "imagem": "imagens/jaca_dura.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 58,
+    "nome": "Jaca mole",
+    "descricao": "Enxertada",
+    "preco": 100,
+    "imagem": "imagens/jaca_mole.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 59,
+    "nome": "Jamelão roxo",
+    "descricao": "Muda de alta qualidade",
+    "preco": 20,
+    "imagem": "imagens/jamelao_roxo.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 60,
+    "nome": "Jenipapo",
+    "descricao": "Branco",
+    "preco": 14,
+    "imagem": "imagens/jenipapo.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 61,
+    "nome": "Jenipapo",
+    "descricao": "Enxertada",
+    "preco": 30,
+    "imagem": "imagens/jenipapo.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 62,
+    "nome": "Jenipapo sem",
+    "descricao": "Produzida por semente",
+    "preco": 80,
+    "imagem": "imagens/jenipapo_sem.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 63,
+    "nome": "Jambo",
+    "descricao": "Amarelo",
+    "preco": 80,
+    "imagem": "imagens/jambo.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 64,
+    "nome": "Jambo",
+    "descricao": "Menor",
+    "preco": 14,
+    "imagem": "imagens/jambo.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 65,
+    "nome": "Jambo",
+    "descricao": "Maior",
+    "preco": 30,
+    "imagem": "imagens/jambo.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 66,
+    "nome": "Jambo",
+    "descricao": "Vermelho",
+    "preco": 20,
+    "imagem": "imagens/jambo.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 67,
+    "nome": "Jambo de cacho",
+    "descricao": "Planta adulta",
+    "preco": 60,
+    "imagem": "imagens/jambo_de_cacho.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 68,
+    "nome": "Laranjaêra",
+    "descricao": "Enxertada",
+    "preco": 30,
+    "imagem": "imagens/laranjaera.jpg",
+    "categoria": "Cítricas"
+  },
+  {
+    "id": 69,
+    "nome": "Laranja Bahia",
+    "descricao": "Enxertada",
+    "preco": 50,
+    "imagem": "imagens/laranja_bahia.jpg",
+    "categoria": "Cítricas"
+  },
+  {
+    "id": 70,
+    "nome": "Laranja Lima",
+    "descricao": "Enxertada",
+    "preco": 50,
+    "imagem": "imagens/laranja_lima.jpg",
+    "categoria": "Cítricas"
+  },
+  {
+    "id": 71,
+    "nome": "Laranja sangue",
+    "descricao": "Muda de alta qualidade",
+    "preco": 50,
+    "imagem": "imagens/laranja_sangue.jpg",
+    "categoria": "Cítricas"
+  },
+  {
+    "id": 72,
+    "nome": "Limãoirim (Galego)",
+    "descricao": "M",
+    "preco": 50,
+    "imagem": "imagens/limaoirim_galego.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 73,
+    "nome": "Limão Tahiti",
+    "descricao": "Enxertada",
+    "preco": 50,
+    "imagem": "imagens/limao_tahiti.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 74,
+    "nome": "Limão Siciliano",
+    "descricao": "Enxertada",
+    "preco": 50,
+    "imagem": "imagens/limao_siciliano.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 75,
+    "nome": "Longana (Olho do Dragão)",
+    "descricao": "Muda de alta qualidade",
+    "preco": 80,
+    "imagem": "imagens/longana_olho_do_dragao.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 76,
+    "nome": "Tangerinaonkan",
+    "descricao": "Enxertada",
+    "preco": 50,
+    "imagem": "imagens/tangerinaonkan.jpg",
+    "categoria": "Cítricas"
+  },
+  {
+    "id": 77,
+    "nome": "Tangerinaexerica",
+    "descricao": "Enxertada",
+    "preco": 50,
+    "imagem": "imagens/tangerinaexerica.jpg",
+    "categoria": "Cítricas"
+  },
+  {
+    "id": 78,
+    "nome": "Manga Espada",
+    "descricao": "Enxertada",
+    "preco": 20,
+    "imagem": "imagens/manga_espada.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 79,
+    "nome": "Mangaalmer",
+    "descricao": "Enxertada",
+    "preco": 20,
+    "imagem": "imagens/mangaalmer.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 80,
+    "nome": "Manga Tommy",
+    "descricao": "Enxertada",
+    "preco": 20,
+    "imagem": "imagens/manga_tommy.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 81,
+    "nome": "Manga Rosa",
+    "descricao": "Enxertada",
+    "preco": 20,
+    "imagem": "imagens/manga_rosa.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 82,
+    "nome": "Mangaba",
+    "descricao": "Muda de alta qualidade",
+    "preco": 20,
+    "imagem": "imagens/mangaba.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 83,
+    "nome": "Maçã Eva",
+    "descricao": "Planta adulta",
+    "preco": 120,
+    "imagem": "imagens/maca_eva.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 84,
+    "nome": "Mapati",
+    "descricao": "Muda de alta qualidade",
+    "preco": 80,
+    "imagem": "imagens/mapati.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 85,
+    "nome": "Mirtilo",
+    "descricao": "Planta adulta",
+    "preco": 120,
+    "imagem": "imagens/mirtilo.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 86,
+    "nome": "Morango",
+    "descricao": "Muda de alta qualidade",
+    "preco": 18,
+    "imagem": "imagens/morango.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 87,
+    "nome": "Nêspera grande",
+    "descricao": "Muda de alta qualidade",
+    "preco": 80,
+    "imagem": "imagens/nespera_grande.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 88,
+    "nome": "Oliveira",
+    "descricao": "Muda de alta qualidade",
+    "preco": 260,
+    "imagem": "imagens/oliveira.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 89,
+    "nome": "Pêssego",
+    "descricao": "Planta adulta",
+    "preco": 120,
+    "imagem": "imagens/pessego.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 90,
+    "nome": "Pimenta-do-reino",
+    "descricao": "Muda de alta qualidade",
+    "preco": 20,
+    "imagem": "imagens/pimenta_do_reino.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 91,
+    "nome": "Pinha",
+    "descricao": "Híbrida",
+    "preco": 14,
+    "imagem": "imagens/pinha.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 92,
+    "nome": "Pitomba",
+    "descricao": "Muda de alta qualidade",
+    "preco": 14,
+    "imagem": "imagens/pitomba.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 93,
+    "nome": "Pitanga",
+    "descricao": "Vermelha",
+    "preco": 10,
+    "imagem": "imagens/pitanga.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 94,
+    "nome": "Pitanga preta (de mesa)",
+    "descricao": "Muda de alta qualidade",
+    "preco": 30,
+    "imagem": "imagens/pitanga_preta_de_mesa.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 95,
+    "nome": "Pitaya branca",
+    "descricao": "Muda de alta qualidade",
+    "preco": 20,
+    "imagem": "imagens/pitaya_branca.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 96,
+    "nome": "Pitaya amarela",
+    "descricao": "Muda de alta qualidade",
+    "preco": 20,
+    "imagem": "imagens/pitaya_amarela.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 97,
+    "nome": "Pitaya",
+    "descricao": "Vermelha",
+    "preco": 20,
+    "imagem": "imagens/pitaya.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 98,
+    "nome": "Pitaya",
+    "descricao": "Vietnamense white",
+    "preco": 20,
+    "imagem": "imagens/pitaya.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 99,
+    "nome": "Pitaya",
+    "descricao": "Vermelha",
+    "preco": 20,
+    "imagem": "imagens/pitaya.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 100,
+    "nome": "Rambutã",
+    "descricao": "Muda de alta qualidade",
+    "preco": 16,
+    "imagem": "imagens/rambuta.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 101,
+    "nome": "Romã",
+    "descricao": "Muda de alta qualidade",
+    "preco": 10,
+    "imagem": "imagens/roma.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 102,
+    "nome": "Kiwi",
+    "descricao": "Planta adulta",
+    "preco": 120,
+    "imagem": "imagens/kiwi.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 103,
+    "nome": "Sapota",
+    "descricao": "Enxertada",
+    "preco": 60,
+    "imagem": "imagens/sapota.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 104,
+    "nome": "Umbu",
+    "descricao": "Muda de alta qualidade",
+    "preco": 20,
+    "imagem": "imagens/umbu.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 105,
+    "nome": "Umbu",
+    "descricao": "Enxertada",
+    "preco": 50,
+    "imagem": "imagens/umbu.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 106,
+    "nome": "Urucum",
+    "descricao": "Muda de alta qualidade",
+    "preco": 14,
+    "imagem": "imagens/urucum.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 107,
+    "nome": "Uvaia",
+    "descricao": "Muda de alta qualidade",
+    "preco": 80,
+    "imagem": "imagens/uvaia.jpg",
+    "categoria": "Frutíferas"
+  },
+  {
+    "id": 108,
+    "nome": "Citronela",
+    "descricao": "Maior",
+    "preco": 60,
+    "imagem": "imagens/citronela.jpg",
+    "categoria": "Nativas"
+  },
+  {
+    "id": 109,
+    "nome": "Ora-pro-nóbis",
+    "descricao": "Muda de alta qualidade",
+    "preco": 20,
+    "imagem": "imagens/ora_pro_nobis.jpg",
+    "categoria": "Nativas"
+  }
+]

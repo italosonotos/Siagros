@@ -1,0 +1,735 @@
+/* --------------------------------------------------
+   S&I Plantas - CSS Oficial & Responsivo Integrado
+   Foco: Mobile-First com suporte completo a Desktop
+   -------------------------------------------------- */
+
+/* Variáveis de cores definidas nas especificações */
+:root {
+    --primary-color: #2E7D32;       /* Verde Botão Primário e Cabeçalho Carrinho */
+    --primary-hover: #1B5E20;      /* Verde Escuro Hover Primário e Total */
+    --secondary-color: #4CAF50;     /* Verde Botão Secundário e Foco do Input */
+    --secondary-hover: #388E3C;    /* Verde Hover Secundário */
+    --text-light: #FFFFFF;         /* Textos em botões ativos */
+    
+    --bg-main: #F9F9F9;            /* Fundo geral da página */
+    --bg-card: #FFFFFF;            /* Fundo dos cartões e carrinho */
+    
+    --border-card: #E8E8E8;        /* Borda fina do card de produto */
+    --border-input: #D9D9D9;       /* Borda padrão do input */
+    --border-divider: #EEEEEE;     /* Linha divisória do carrinho */
+    
+    --shadow-card: rgba(0, 0, 0, 0.08); /* Sombra elegante */
+    
+    --text-dark: #212121;          /* Cor de títulos e nomes principais */
+    --text-muted: #757575;         /* Cor das descrições */
+    --text-icon: #616161;          /* Cor de ícones secundários */
+}
+
+/* Reset básico e tipografia */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* --------------------------------------------------
+   1. CABEÇALHO / NAVBAR (S&I Plantas)
+   -------------------------------------------------- */
+.navbar {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 12px 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-main {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+}
+
+.logo-sub {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #A5D6A7;
+}
+
+/* Menu do cabeçalho oculto por padrão no mobile */
+.nav-menu {
+    display: none;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.action-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-light);
+    cursor: pointer;
+    padding: 8px;
+    position: relative;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-btn:hover {
+    background-color: var(--primary-hover);
+}
+
+.cart-badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-color: #E53935;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 2px 6px;
+}
+
+/* --------------------------------------------------
+   2. HERO BANNER
+   -------------------------------------------------- */
+.hero-banner {
+    background: linear-gradient(135deg, rgba(46,125,50,0.9), rgba(27,94,32,0.95)), 
+                url('imagens/hero_bg.jpg') no-repeat center center/cover;
+    color: var(--text-light);
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 25px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.4);
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: var(--text-light);
+    width: 16px;
+    border-radius: 4px;
+}
+
+/* --------------------------------------------------
+   3. BOTÕES (Especificações estritas de cor)
+   -------------------------------------------------- */
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    width: 100%;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 18px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    width: 100%;
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-hover);
+}
+
+.btn-secondary:active {
+    transform: scale(0.98);
+}
+
+/* --------------------------------------------------
+   4. SEÇÃO DE BUSCA E FILTROS
+   -------------------------------------------------- */
+.search-section {
+    padding: 20px 16px 10px 16px;
+}
+
+.search-box {
+    position: relative;
+    width: 100%;
+}
+
+.search-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-icon);
+    pointer-events: none;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 14px 14px 14px 44px;
+    border: 1px solid var(--border-input);
+    border-radius: 8px;
+    background-color: var(--bg-card);
+    font-size: 0.95rem;
+    font-family: inherit;
+    color: var(--text-dark);
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-box input:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.15);
+}
+
+/* --------------------------------------------------
+   5. SEÇÃO DE CATEGORIAS (Estilo modernizado da imagem)
+   -------------------------------------------------- */
+.categories-section {
+    padding: 10px 16px 20px 16px;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 16px;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.category-card {
+    background-color: #E8F5E9; /* Verde claro sutil de fundo para categorias */
+    border-radius: 8px;
+    padding: 14px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+}
+
+.category-card:hover {
+    transform: translateY(-2px);
+    background-color: #C8E6C9;
+}
+
+.category-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.category-emoji {
+    font-size: 1.5rem;
+}
+
+.category-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1B5E20;
+}
+
+/* Tons sutis de fundos alternados para as categorias para imitar a imagem */
+.cat-citricas { background-color: #E8F5E9; }
+.cat-frutiferas { background-color: #E8F5E9; }
+.cat-ornamentais { background-color: #E8F5E9; }
+.cat-nativas { background-color: #E8F5E9; }
+
+/* --------------------------------------------------
+   6. GRID DE PRODUTOS & CARDS (Mobile-First)
+   -------------------------------------------------- */
+.products-section {
+    padding: 10px 16px 40px 16px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 Coluna no mobile para focar na melhor visualização */
+    gap: 16px;
+}
+
+.product-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-card);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px var(--shadow-card);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.product-image-container {
+    width: 100%;
+    height: 220px;
+    background-color: #F5F5F5;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.product-card:hover .product-image-container img {
+    transform: scale(1.05);
+}
+
+.product-info {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product-name {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 6px;
+}
+
+.product-desc {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    flex-grow: 1;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-hover); /* Preço conforme especificado (#1B5E20) */
+    margin-bottom: 14px;
+}
+
+/* --------------------------------------------------
+   7. CARRINHO DE COMPRAS (Overlay no Mobile)
+   -------------------------------------------------- */
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Invisível e recolhido à direita por padrão no mobile */
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    background-color: var(--bg-card);
+    box-shadow: -4px 0 20px rgba(0,0,0,0.15);
+    z-index: 2000;
+    transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Classe de ativação que será disparada pelo JS futuramente */
+.cart-sidebar.open {
+    right: 0;
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.cart-header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-header h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.close-cart-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.8rem;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.cart-items {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 16px;
+}
+
+.cart-item {
+    display: flex;
+    gap: 12px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--border-divider);
+    position: relative;
+}
+
+.cart-item img {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    object-fit: cover;
+    background-color: #F5F5F5;
+}
+
+.cart-item-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.cart-item-details h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    padding-right: 20px;
+}
+
+.cart-item-price {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+}
+
+.qty-btn {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: 1px solid var(--border-input);
+    background-color: var(--bg-main);
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qty-btn:hover {
+    background-color: #E8F5E9;
+}
+
+.qty-number {
+    font-size: 0.9rem;
+    font-weight: 600;
+    min-width: 16px;
+    text-align: center;
+}
+
+.remove-item {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.remove-item:hover {
+    color: #E53935;
+}
+
+/* Resumo do Pedido */
+.cart-summary {
+    padding: 20px 16px;
+    background-color: #FAFAFA;
+    border-top: 1px solid var(--border-divider);
+}
+
+.cart-summary h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+    color: var(--text-dark);
+}
+
+.summary-line {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+}
+
+.total-line {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--primary-hover); /* Conforme guia: Total: #1B5E20 */
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px dashed var(--border-input);
+}
+
+/* --------------------------------------------------
+   8. ELEMENTOS EXCLUSIVOS MOBILE (FAB DO CARRINHO)
+   -------------------------------------------------- */
+.mobile-cart-fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.mobile-cart-badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 2px 6px;
+}
+
+/* ===== CARRINHO LATERAL (ASIDE) - MOBILE ===== */
+
+@media (max-width: 900px) {
+  .cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 85%;
+    max-width: 360px;
+    background: #fff;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+  }
+
+  .cart-sidebar.aberto {
+    transform: translateX(0);
+  }
+
+  /* Fundo escurecido atrás do carrinho quando aberto */
+  .cart-sidebar::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .cart-sidebar.aberto::before {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+/* Botão flutuante do carrinho (mobile) - garante que fica por cima de tudo */
+.mobile-cart-fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 900;
+}
+
+/* --------------------------------------------------
+   9. MEDIA QUERIES (ADAPTAÇÃO ADICIONAL PARA DESKTOP)
+   -------------------------------------------------- */
+
+/* Telas médias (Tablets em diante) */
+@media (min-width: 600px) {
+    .categories-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Telas Grandes (Notebooks e Desktop) */
+@media (min-width: 1024px) {
+    .navbar {
+        padding: 16px 40px;
+    }
+    
+    .nav-menu {
+        display: flex;
+        gap: 24px;
+    }
+    
+    .nav-menu a {
+        color: var(--text-light);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 0.95rem;
+        opacity: 0.85;
+        transition: opacity 0.2s;
+    }
+    
+    .nav-menu a:hover, .nav-menu a.active {
+        opacity: 1;
+        font-weight: 600;
+    }
+
+    .hero-banner {
+        padding: 80px 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+        max-width: 600px;
+        margin: 0 auto 24px auto;
+    }
+
+    .btn-primary {
+        width: auto;
+        padding: 14px 36px;
+    }
+
+    /* Divisão estrutural em duas colunas no desktop */
+    .main-container {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+        display: flex;
+        gap: 30px;
+    }
+
+    .content-left {
+        flex: 1; /* Ocupa todo o espaço restante */
+    }
+
+    /* Produtos ganham 3 colunas completas no desktop */
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    /* No desktop, o carrinho é fixo na lateral direita ao invés de oculto */
+    .cart-sidebar {
+        position: static; /* Volta para o fluxo normal da página */
+        width: 380px;
+        max-width: none;
+        height: fit-content;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px var(--shadow-card);
+        border: 1px solid var(--border-card);
+    }
+
+    .cart-header {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+
+    .close-cart-btn {
+        display: none; /* Não precisa do botão fechar no desktop */
+    }
+
+    /* Oculta o botão flutuante no desktop */
+    .mobile-cart-fab {
+        display: none;
+    }
+}

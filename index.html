@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SI Plantas - Mudas Premium</title>
+    <!-- Google Fonts para tipografia limpa e moderna -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/index.js" defer></script>
+    <!-- Folha de estilo externa -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- CABEÇALHO / NAVBAR -->
+    <header class="navbar">
+      <div class="navbar-container">
+        <!-- Logo do Negócio -->
+        <div class="logo">
+          <span class="logo-main">SiAgros</span>
+          <span class="logo-sub">Mudas</span>
+        </div>
+
+        <!-- Menu de Navegação (Desktop) -->
+        <nav class="nav-menu">
+          <a href="#" class="active">Início</a>
+          <a href="#">Produtos</a>
+          <a href="#">Categorias</a>
+          <a href="#">Promoções</a>
+          <a href="#">Contato</a>
+          <a href="#">Sobre</a>
+        </nav>
+
+        <!-- Ícones de Ação / Barra de Pesquisa rápida -->
+        <div class="nav-actions">
+          <button class="action-btn" aria-label="Pesquisar">
+            <!-- Ícone de lupa simplificado -->
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+          <button class="action-btn toggle-cart" aria-label="Ver Carrinho">
+            <!-- Ícone de carrinho simplificado -->
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path
+                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+              ></path>
+            </svg>
+            <span class="cart-badge">3</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- BANNER HERO (PRINCIPAL) -->
+    <section class="hero-banner">
+      <div class="hero-content">
+        <h1>Mudas Premium para seu Pomar</h1>
+        <button class="btn-primary">Comprar em nosso pomar</button>
+      </div>
+      <!-- Indicadores de slide (carrossel) -->
+      <div class="carousel-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </section>
+
+    <!-- CONTAINER PRINCIPAL (LAYOUT DUAS COLUNAS EM DESKTOP / FLUIDO NO MOBILE) -->
+    <main class="main-container">
+      <!-- COLUNA ESQUERDA: CATEGORIAS E PRODUTOS -->
+      <div class="content-left">
+        <!-- CAMPO DE PESQUISA -->
+        <section class="search-section">
+          <div class="search-box">
+            <svg
+              class="search-icon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input
+              type="text"
+              placeholder="Buscar plantas frutíferas, cítricas, nativas ou ornamentais..."
+            />
+          </div>
+        </section>
+
+        <!-- SEÇÃO DE CATEGORIAS (Cards Coloridos) -->
+        <section class="categories-section">
+          <h2 class="section-title">Principais categorias</h2>
+          <div class="categories-grid">
+            <!-- Cada card tem um background verde sutil e representação visual -->
+            <div class="category-card cat-frutiferas">
+              <div class="category-info">
+                <span class="category-emoji">🥭</span>
+                <span class="category-name">Frutíferas</span>
+              </div>
+            </div>
+            <div class="category-card cat-citricas">
+              <div class="category-info">
+                <span class="category-emoji">🍋</span>
+                <span class="category-name">Cítricas</span>
+              </div>
+            </div>
+            <div class="category-card cat-ornamentais">
+              <div class="category-info">
+                <span class="category-emoji">🌴</span>
+                <span class="category-name">Ornamentais</span>
+              </div>
+            </div>
+            <div class="category-card cat-nativas">
+              <div class="category-info">
+                <span class="category-emoji">🌱</span>
+                <span class="category-name">Nativas</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SEÇÃO DE PRODUTOS -->
+        <section class="products-section">
+          <h2 class="section-title">Produtos em destaque</h2>
+
+          <!-- COMENTÁRIO: Esta é a grade dinâmica onde o JavaScript irá renderizar todos os seus produtos do JSON -->
+          <div class="products-grid" id="produtos-container">
+            <!-- Exemplo de Card Estático 1 -->
+            <div class="product-card">
+              <!-- Os detalhes do produto (imagem, nome, preço, botão) vão aqui dentro se você quiser deixar um modelo visual -->
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- COLUNA DIREITA: CARRINHO DE COMPRAS FIXADO (Perfeito para desktop, vira overlay/gaveta no mobile) -->
+      <aside class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-container">
+          <div class="cart-header">
+            <h2>Meu Carrinho</h2>
+            <!-- Botão de fechar (relevante principalmente no Mobile) -->
+            <button class="close-cart-btn" aria-label="Fechar carrinho">
+              &times;
+            </button>
+          </div>
+
+          <!-- Lista de itens do Carrinho -->
+          <!-- COMENTÁRIO: O JavaScript irá limpar e popular esta div conforme o cliente adiciona itens -->
+          <div class="cart-items" id="carrinho-itens">
+            <!-- Item de Exemplo 1 -->
+            <div class="cart-item">
+              <img src="imagens/manga_palmer.jpg" alt="Muda de Manga" />
+              <div class="cart-item-details">
+                <h4>Muda de Manga Palmer</h4>
+                <p class="cart-item-price">R$ 165,00</p>
+                <div class="quantity-selector">
+                  <button class="qty-btn minus">-</button>
+                  <span class="qty-number">1</span>
+                  <button class="qty-btn plus">+</button>
+                </div>
+              </div>
+              <button class="remove-item" title="Remover item">&times;</button>
+            </div>
+
+            <!-- Item de Exemplo 2 -->
+            <div class="cart-item">
+              <img src="imagens/limao_tahiti.jpg" alt="Limão Tahiti" />
+              <div class="cart-item-details">
+                <h4>Muda de Laranja Bahia</h4>
+                <p class="cart-item-price">R$ 165,00</p>
+                <div class="quantity-selector">
+                  <button class="qty-btn minus">-</button>
+                  <span class="qty-number">2</span>
+                  <button class="qty-btn plus">+</button>
+                </div>
+              </div>
+              <button class="remove-item" title="Remover item">&times;</button>
+            </div>
+          </div>
+
+          <!-- Resumo financeiro do Carrinho -->
+          <div class="cart-summary">
+            <h3>Resumo do Pedido</h3>
+            <div class="summary-line">
+              <span>Subtotal</span>
+              <span id="cart-subtotal">R$ 430,00</span>
+            </div>
+            <div class="summary-line">
+              <span>Frete</span>
+              <span id="cart-frete">R$ 45,00</span>
+            </div>
+            <div class="summary-line total-line">
+              <span>Total</span>
+              <span id="cart-total">R$ 475,00</span>
+            </div>
+
+            <!-- Botão de checkout principal -->
+            <button class="btn-primary btn-checkout">Finalizar Pedido</button>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <!-- BOTÃO FLUTUANTE DE CARRINHO (Apenas visível em telas mobile para facilitar abertura) -->
+    <button class="mobile-cart-fab" id="mobile-cart-fab">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <circle cx="9" cy="21" r="1"></circle>
+        <circle cx="20" cy="21" r="1"></circle>
+        <path
+          d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+        ></path>
+      </svg>
+      <span class="mobile-cart-badge">3</span>
+    </button>
+  </body>
+</html>
