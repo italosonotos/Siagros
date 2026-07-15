@@ -108,6 +108,7 @@
             </svg>
             <input
               type="text"
+              id="campo-busca"
               placeholder="Buscar plantas frutíferas, cítricas, nativas ou ornamentais..."
             />
           </div>
@@ -118,25 +119,25 @@
           <h2 class="section-title">Principais categorias</h2>
           <div class="categories-grid">
             <!-- Cada card tem um background verde sutil e representação visual -->
-            <div class="category-card cat-frutiferas">
+            <div class="category-card cat-frutiferas" data-categoria="Frutíferas">
               <div class="category-info">
                 <span class="category-emoji">🥭</span>
                 <span class="category-name">Frutíferas</span>
               </div>
             </div>
-            <div class="category-card cat-citricas">
+            <div class="category-card cat-citricas" data-categoria="Cítricas">
               <div class="category-info">
                 <span class="category-emoji">🍋</span>
                 <span class="category-name">Cítricas</span>
               </div>
             </div>
-            <div class="category-card cat-ornamentais">
+            <div class="category-card cat-ornamentais" data-categoria="Ornamentais">
               <div class="category-info">
                 <span class="category-emoji">🌴</span>
                 <span class="category-name">Ornamentais</span>
               </div>
             </div>
-            <div class="category-card cat-nativas">
+            <div class="category-card cat-nativas" data-categoria="Nativas">
               <div class="category-info">
                 <span class="category-emoji">🌱</span>
                 <span class="category-name">Nativas</span>
@@ -175,31 +176,6 @@
           <div class="cart-items" id="carrinho-itens">
             <!-- Item de Exemplo 1 -->
             <div class="cart-item">
-              <img src="imagens/manga_palmer.jpg" alt="Muda de Manga" />
-              <div class="cart-item-details">
-                <h4>Muda de Manga Palmer</h4>
-                <p class="cart-item-price">R$ 165,00</p>
-                <div class="quantity-selector">
-                  <button class="qty-btn minus">-</button>
-                  <span class="qty-number">1</span>
-                  <button class="qty-btn plus">+</button>
-                </div>
-              </div>
-              <button class="remove-item" title="Remover item">&times;</button>
-            </div>
-
-            <!-- Item de Exemplo 2 -->
-            <div class="cart-item">
-              <img src="imagens/limao_tahiti.jpg" alt="Limão Tahiti" />
-              <div class="cart-item-details">
-                <h4>Muda de Laranja Bahia</h4>
-                <p class="cart-item-price">R$ 165,00</p>
-                <div class="quantity-selector">
-                  <button class="qty-btn minus">-</button>
-                  <span class="qty-number">2</span>
-                  <button class="qty-btn plus">+</button>
-                </div>
-              </div>
               <button class="remove-item" title="Remover item">&times;</button>
             </div>
           </div>
@@ -209,15 +185,15 @@
             <h3>Resumo do Pedido</h3>
             <div class="summary-line">
               <span>Subtotal</span>
-              <span id="cart-subtotal">R$ 430,00</span>
+              <span id="cart-subtotal">R$ 0,00</span>
             </div>
             <div class="summary-line">
               <span>Frete</span>
-              <span id="cart-frete">R$ 45,00</span>
+              <span id="cart-frete">R$ 0,00</span>
             </div>
             <div class="summary-line total-line">
               <span>Total</span>
-              <span id="cart-total">R$ 475,00</span>
+              <span id="cart-total">R$ 0,00</span>
             </div>
 
             <!-- Botão de checkout principal -->

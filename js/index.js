@@ -1,6 +1,8 @@
 // Estado global
 let produtosDisponiveis = []; // guarda os produtos vindos do JSON
 let carrinho = []; // guarda { id, quantidade }
+let categoriaAtiva = null; // null = mostrar todas
+let termoBusca = "";
 
 const FRETE_FIXO = 45.0;
 
@@ -8,6 +10,7 @@ const FRETE_FIXO = 45.0;
 document.addEventListener("DOMContentLoaded", () => {
     carregarProdutos();
     configurarEventosCarrinho();
+    configurarFiltros();
 });
 
 async function carregarProdutos() {
@@ -26,36 +29,9 @@ async function carregarProdutos() {
         }
 
         const produtos = await resposta.json();
-        produtosDisponiveis = produtos; // guarda pra usar no carrinho depois
+        produtosDisponiveis = produtos;
 
-        catalogo.innerHTML = "";
-
-        produtos.forEach(produto => {
-            catalogo.innerHTML += `
-                <div class="product-card">
-                    <div class="product-image-container">
-                        <img
-                            src="${produto.imagem}"
-                            alt="${produto.nome}"
-                            loading="lazy"
-                        >
-                    </div>
-
-                    <div class="product-info">
-                        <h3 class="product-name">${produto.nome}</h3>
-                        <p class="product-desc">${produto.descricao}</p>
-                        <p class="product-price">
-                            R$ ${Number(produto.preco).toFixed(2).replace(".", ",")}
-                        </p>
-                        <button
-                            class="btn-secondary btn-add-cart"
-                            onclick="adicionarCarrinho(${produto.id})">
-                            Adicionar ao Carrinho
-                        </button>
-                    </div>
-                </div>
-            `;
-        });
+        renderizarProdutos(produtosDisponiveis);
 
     } catch (erro) {
         console.error("Erro ao carregar produtos:", erro);
@@ -176,7 +152,7 @@ function atualizarBadge() {
     if (badgeMobile) badgeMobile.textContent = totalItens;
 }
 
-// ---------- ABRIR/FECHAR CARRINHO (bônus) ----------
+// ---------- ABRIR/FECHAR CARRINHO ----------
 
 function configurarEventosCarrinho() {
     const cartSidebar = document.getElementById("cart-sidebar");
@@ -201,4 +177,101 @@ function configurarEventosCarrinho() {
             cartSidebar.classList.remove("aberto");
         });
     }
+}
+
+// ---------- FILTROS: CATEGORIA + BUSCA ----------
+
+function configurarFiltros() {
+    // Categorias
+    const cards = document.querySelectorAll(".category-card");
+
+    cards.forEach(card => {
+        card.addEventListener("click", () => {
+            const categoria = card.dataset.categoria;
+
+            if (categoriaAtiva === categoria) {
+                // clicou de novo na mesma -> desativa (mostra todas)
+                categoriaAtiva = null;
+                cards.forEach(c => c.classList.remove("categoria-ativa"));
+            } else {
+                categoriaAtiva = categoria;
+                cards.forEach(c => c.classList.remove("categoria-ativa"));
+                card.classList.add("categoria-ativa");
+            }
+
+            aplicarFiltros();
+        });
+    });
+
+    // Busca
+    const inputBusca = document.getElementById("campo-busca");
+
+    if (inputBusca) {
+        inputBusca.addEventListener("input", (e) => {
+            termoBusca = e.target.value.trim().toLowerCase();
+            aplicarFiltros();
+        });
+    }
+}
+
+function aplicarFiltros() {
+    let produtosFiltrados = produtosDisponiveis;
+
+    if (categoriaAtiva) {
+        produtosFiltrados = produtosFiltrados.filter(
+            p => p.categoria === categoriaAtiva
+        );
+    }
+
+    if (termoBusca) {
+        produtosFiltrados = produtosFiltrados.filter(p =>
+            p.nome.toLowerCase().includes(termoBusca) ||
+            p.descricao.toLowerCase().includes(termoBusca)
+        );
+    }
+
+    renderizarProdutos(produtosFiltrados);
+}
+
+function renderizarProdutos(produtos) {
+    const catalogo = document.getElementById("produtos-container");
+    if (!catalogo) return;
+
+    if (produtos.length === 0) {
+        catalogo.innerHTML = `
+            <div class="erro-produtos">
+                Nenhum produto encontrado.
+            </div>
+        `;
+        return;
+    }
+
+    catalogo.innerHTML = "";
+
+    produtos.forEach(produto => {
+        catalogo.innerHTML += `
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img
+                        src="${produto.imagem}"
+                        alt="${produto.nome}"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="product-info">
+                    <h3 class="product-name">${produto.nome}</h3>
+                    <p class="product-desc">${produto.descricao}</p>
+                    <p class="product-price">
+                        R$ ${Number(produto.preco).toFixed(2).replace(".", ",")}
+                    </p>
+                    <button
+                        class="btn-secondary btn-add-cart"
+                        onclick="adicionarCarrinho(${produto.id})">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+            </div>
+        `;
+    });
 }

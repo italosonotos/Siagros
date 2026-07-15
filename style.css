@@ -634,6 +634,20 @@ body {
   z-index: 900;
 }
 
+.category-card {
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-2px);
+}
+
+.category-card.categoria-ativa {
+  outline: 2px solid #2e7d32; /* ajuste pra cor verde do seu tema */
+  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.25);
+}
+
 /* --------------------------------------------------
    9. MEDIA QUERIES (ADAPTAÇÃO ADICIONAL PARA DESKTOP)
    -------------------------------------------------- */
