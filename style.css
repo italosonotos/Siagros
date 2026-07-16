@@ -32,6 +32,101 @@
     padding: 0;
 }
 
+/* ================= LOADER ================= */
+
+#loader{
+    position:fixed;
+    inset:0;
+    background:#ffffff;
+    z-index:99999;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    transition:.5s;
+}
+
+#loader.hidden{
+
+    opacity:0;
+    visibility:hidden;
+
+}
+
+.loader-content{
+
+    text-align:center;
+
+}
+
+.loader-content img{
+
+    width:220px;
+    margin-bottom:25px;
+
+    animation:pulse 1.6s infinite;
+
+}
+
+.loader-spinner{
+
+    width:42px;
+    height:42px;
+
+    border:4px solid #e5e5e5;
+    border-top:4px solid #2E7D32;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    animation:spin .8s linear infinite;
+
+}
+
+.loader-content p{
+
+    margin-top:15px;
+
+    color:#666;
+
+    font-size:15px;
+
+}
+
+@keyframes spin{
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: var(--bg-main);
@@ -646,6 +741,134 @@ body {
 .category-card.categoria-ativa {
   outline: 2px solid #2e7d32; /* ajuste pra cor verde do seu tema */
   box-shadow: 0 4px 12px rgba(46, 125, 50, 0.25);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.page-btn {
+  min-width: 36px;
+  height: 36px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.page-btn:hover:not(:disabled) {
+  background: #f0f0f0;
+}
+
+.page-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.page-ativa {
+  background: #2e7d32; /* ajuste pra cor verde do seu tema */
+  color: #fff;
+  border-color: #2e7d32;
+}
+
+/* ===========================
+   FORMULÁRIO DO CLIENTE
+=========================== */
+
+.checkout-form {
+    background: #ffffff;
+    border: 1px solid #e8ece9;
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.05);
+}
+
+.checkout-form h3 {
+    font-size: 18px;
+    color: #1b4332;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #4b5563;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+    background: #fff;
+    font-size: 15px;
+    transition: .25s;
+    outline: none;
+    font-family: inherit;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #2e7d32;
+    box-shadow: 0 0 0 3px rgba(46,125,50,.15);
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.payment-info {
+    display: none;
+    background: #fff8e1;
+    color: #8a6d00;
+    border-left: 4px solid #f4b400;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.payment-info.show {
+    display: block;
+}
+
+.required {
+    color: #d32f2f;
+}
+
+.checkout-form hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ececec;
 }
 
 /* --------------------------------------------------

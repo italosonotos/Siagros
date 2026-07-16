@@ -16,6 +16,19 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="loader">
+
+    <div class="loader-content">
+
+        <img src="image/logo2.png" alt="SiAgro Mudas">
+
+        <div class="loader-spinner"></div>
+
+        <p>Carregando catálogo...</p>
+
+    </div>
+
+</div>
     <!-- CABEÇALHO / NAVBAR -->
     <header class="navbar">
       <div class="navbar-container">
@@ -119,7 +132,10 @@
           <h2 class="section-title">Principais categorias</h2>
           <div class="categories-grid">
             <!-- Cada card tem um background verde sutil e representação visual -->
-            <div class="category-card cat-frutiferas" data-categoria="Frutíferas">
+            <div
+              class="category-card cat-frutiferas"
+              data-categoria="Frutíferas"
+            >
               <div class="category-info">
                 <span class="category-emoji">🥭</span>
                 <span class="category-name">Frutíferas</span>
@@ -131,7 +147,10 @@
                 <span class="category-name">Cítricas</span>
               </div>
             </div>
-            <div class="category-card cat-ornamentais" data-categoria="Ornamentais">
+            <div
+              class="category-card cat-ornamentais"
+              data-categoria="Ornamentais"
+            >
               <div class="category-info">
                 <span class="category-emoji">🌴</span>
                 <span class="category-name">Ornamentais</span>
@@ -157,6 +176,7 @@
               <!-- Os detalhes do produto (imagem, nome, preço, botão) vão aqui dentro se você quiser deixar um modelo visual -->
             </div>
           </div>
+          <div class="pagination" id="pagination-container"></div>
         </section>
       </div>
 
@@ -195,9 +215,47 @@
               <span>Total</span>
               <span id="cart-total">R$ 0,00</span>
             </div>
+            <div class="checkout-form">
+              <h3>Dados para o pedido</h3>
+
+              <input type="text" id="cliente-nome" placeholder="Seu nome" />
+
+              <input type="tel" id="cliente-telefone" placeholder="Telefone" />
+
+              <textarea
+                id="cliente-endereco"
+                placeholder="Endereço completo"
+                rows="3"
+              ></textarea>
+
+              <select id="forma-entrega">
+                <option value="Retirada">Retirada na loja</option>
+                <option value="Entrega">Entrega</option>
+              </select>
+
+              <select id="forma-pagamento">
+                <option value="Dinheiro">Dinheiro</option>
+                <option value="Pix">Pix</option>
+                <option value="Débito">Cartão de Débito (sem juros)</option>
+                <option value="Crédito">Cartão de Crédito</option>
+              </select>
+
+              <p
+                id="aviso-credito"
+                style="display: none; color: #666; font-size: 14px"
+              >
+                ℹ️ Pagamentos no cartão de crédito podem ter uma pequena taxa
+                adicional.
+              </p>
+            </div>
 
             <!-- Botão de checkout principal -->
-            <button class="btn-primary btn-checkout">Finalizar Pedido</button>
+            <button
+              class="btn-primary btn-checkout"
+              onclick="finalizarPedido()"
+            >
+              Finalizar Pedido
+            </button>
           </div>
         </div>
       </aside>
