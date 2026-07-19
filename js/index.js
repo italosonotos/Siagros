@@ -7,7 +7,7 @@ let termoBusca = "";
 const PRODUTOS_POR_PAGINA = 10;
 let paginaAtual = 1;
 
-const FRETE_FIXO = 45.0;
+const FRETE_FIXO = 0;
 
 // ---------- LOCAL STORAGE ----------
 
@@ -297,8 +297,12 @@ function renderizarProdutos(produtos) {
   catalogo.innerHTML = "";
 
   produtosDaPagina.forEach((produto) => {
+    // COMENTÁRIO: O card inteiro abre a página de detalhe do produto ao ser clicado
+    // (onclick="abrirProduto(...)"). O botão "Adicionar ao Carrinho" usa
+    // event.stopPropagation() para que o clique nele NÃO abra a página de detalhe,
+    // apenas adicione o item direto pelo card, como já funcionava antes.
     catalogo.innerHTML += `
-            <div class="product-card">
+            <div class="product-card" onclick="abrirProduto(${produto.id})">
                 <div class="product-image-container">
                     <img
                         src="${produto.imagem}"
@@ -315,7 +319,7 @@ function renderizarProdutos(produtos) {
                     </p>
                     <button
                         class="btn-secondary btn-add-cart"
-                        onclick="adicionarCarrinho(${produto.id})">
+                        onclick="event.stopPropagation(); adicionarCarrinho(${produto.id})">
                         Adicionar ao Carrinho
                     </button>
                 </div>
@@ -376,6 +380,75 @@ function irParaPagina(pagina) {
     ?.scrollIntoView({ behavior: "smooth" });
 }
 
+// ---------- TROCA DE "PÁGINA" (HOME / DETALHE / CONFIRMAÇÃO) ----------
+// COMENTÁRIO: Como é tudo em uma página só (sem framework), "navegar" aqui
+// significa esconder um desses três blocos e mostrar outro:
+//   - conteudo-home        -> busca + categorias + produtos
+//   - conteudo-detalhe     -> página de um produto específico
+//   - conteudo-confirmacao -> revisão do pedido antes de enviar pro WhatsApp
+// O carrinho (#cart-sidebar) e o cabeçalho ficam DE FORA dessa troca de
+// propósito, então continuam acessíveis em qualquer uma das "páginas".
+function mostrarConteudo(idParaMostrar) {
+  ["conteudo-home", "conteudo-detalhe", "conteudo-confirmacao"].forEach(
+    (id) => {
+      const el = document.getElementById(id);
+      if (el) el.style.display = id === idParaMostrar ? "block" : "none";
+    },
+  );
+
+  // O banner hero só faz sentido na home
+  const hero = document.getElementById("hero-banner");
+  if (hero) hero.style.display = idParaMostrar === "conteudo-home" ? "" : "none";
+
+  window.scrollTo({ top: 0, behavior: "instant" });
+}
+
+// ---------- PÁGINA DE DETALHE DO PRODUTO ----------
+
+function abrirProduto(id) {
+  const produto = produtosDisponiveis.find((p) => p.id === id);
+
+  if (!produto) {
+    console.error("Produto não encontrado.");
+    return;
+  }
+
+  // Preenche a página de detalhe com os dados do produto clicado
+  const imagem = document.getElementById("detalhe-imagem");
+  imagem.src = produto.imagem;
+  imagem.alt = produto.nome;
+
+  document.getElementById("detalhe-nome").textContent = produto.nome;
+  document.getElementById("detalhe-preco").textContent =
+    `R$ ${Number(produto.preco).toFixed(2).replace(".", ",")}`;
+  document.getElementById("detalhe-descricao").textContent = produto.descricao;
+
+  // Esconde qualquer confirmação de uma visita anterior
+  const confirmacao = document.getElementById("confirmacao-adicionado");
+  confirmacao.classList.remove("show");
+
+  // Configura o botão "Adicionar ao Carrinho" desta página para o produto atual.
+  // Ao clicar, adiciona ao carrinho e MOSTRA a confirmação, mas continua
+  // na mesma página do produto (não navega para lugar nenhum).
+  const btnAdd = document.getElementById("btn-add-detalhe");
+  btnAdd.onclick = () => {
+    adicionarCarrinho(produto.id);
+    confirmacao.classList.add("show");
+
+    // Esconde a mensagem de novo depois de um tempo
+    clearTimeout(btnAdd._timeoutConfirmacao);
+    btnAdd._timeoutConfirmacao = setTimeout(() => {
+      confirmacao.classList.remove("show");
+    }, 2500);
+  };
+
+  mostrarConteudo("conteudo-detalhe");
+}
+
+function voltarInicio() {
+  mostrarConteudo("conteudo-home");
+}
+
 // ---------- AVISO DE CRÉDITO ----------
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -389,9 +462,18 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// ---------- FINALIZAR PEDIDO ----------
+// ---------- REVISÃO E CONFIRMAÇÃO DO PEDIDO ----------
+// COMENTÁRIO: Ao clicar em "Finalizar Pedido" no carrinho, NÃO vamos mais
+// direto pro WhatsApp. Primeiro validamos os campos e mostramos uma página
+// de revisão (#conteudo-confirmacao) com os itens e os dados preenchidos.
+// A pessoa então escolhe: "Confirmar e enviar pelo WhatsApp" (dispara a
+// mensagem, igual antes) ou "Voltar e revisar" (volta pra home com o
+// carrinho aberto, pra ajustar quantidade ou adicionar mais produtos).
 
-function finalizarPedido() {
+// Guarda os dados já validados, prontos pra virar mensagem quando confirmados.
+let pedidoParaConfirmar = null;
+
+function abrirConfirmacaoPedido() {
   if (carrinho.length === 0) {
     alert("Seu carrinho está vazio!");
     return;
@@ -407,6 +489,76 @@ function finalizarPedido() {
     alert("Preencha nome, telefone e endereço.");
     return;
   }
+
+  // Monta a lista de itens junto com o total, a partir do carrinho atual
+  const itens = [];
+  let total = 0;
+
+  carrinho.forEach((item) => {
+    const produto = produtosDisponiveis.find((p) => p.id === item.id);
+    if (!produto) return;
+
+    const subtotal = produto.preco * item.quantidade;
+    total += subtotal;
+
+    itens.push({
+      nome: produto.nome,
+      quantidade: item.quantidade,
+      precoUnitario: produto.preco,
+      subtotal: subtotal,
+    });
+  });
+
+  const frete = FRETE_FIXO;
+  const totalComFrete = total + frete;
+
+  // Guarda tudo pra usar quando a pessoa confirmar de fato
+  pedidoParaConfirmar = { nome, telefone, endereco, entrega, pagamento, itens, totalComFrete };
+
+  preencherPaginaConfirmacao(pedidoParaConfirmar);
+
+  // Fecha o carrinho (se estiver aberto no mobile) e mostra a página de revisão
+  document.getElementById("cart-sidebar")?.classList.remove("aberto");
+  mostrarConteudo("conteudo-confirmacao");
+}
+
+function preencherPaginaConfirmacao(pedido) {
+  const listaEl = document.getElementById("confirmacao-itens-lista");
+
+  listaEl.innerHTML = pedido.itens
+    .map(
+      (item) => `
+        <div class="confirmacao-item">
+            <span class="confirmacao-item-nome">${item.quantidade}x ${item.nome}</span>
+            <span class="confirmacao-item-valor">R$ ${item.subtotal.toFixed(2).replace(".", ",")}</span>
+        </div>
+    `,
+    )
+    .join("");
+
+  document.getElementById("confirmacao-total-valor").textContent =
+    `R$ ${pedido.totalComFrete.toFixed(2).replace(".", ",")}`;
+
+  document.getElementById("confirmacao-nome").textContent = pedido.nome;
+  document.getElementById("confirmacao-telefone").textContent = pedido.telefone;
+  document.getElementById("confirmacao-endereco").textContent = pedido.endereco;
+  document.getElementById("confirmacao-entrega").textContent = pedido.entrega;
+  document.getElementById("confirmacao-pagamento").textContent = pedido.pagamento;
+}
+
+// Volta pra home (com o carrinho já aberto) pra pessoa revisar/ajustar o pedido
+function voltarParaCarrinho() {
+  mostrarConteudo("conteudo-home");
+  document.getElementById("cart-sidebar")?.classList.add("aberto");
+}
+
+// Monta a mensagem final e abre o WhatsApp - só roda quando a pessoa
+// realmente confirma na página de revisão.
+function confirmarEnvioPedido() {
+  if (!pedidoParaConfirmar) return;
+
+  const { nome, telefone, endereco, entrega, pagamento, itens, totalComFrete } =
+    pedidoParaConfirmar;
 
   let mensagem = "*NOVO PEDIDO - SIAGRO MUDAS*\n\n";
 
@@ -425,22 +577,14 @@ function finalizarPedido() {
   mensagem += "*ITENS DO PEDIDO*\n";
   mensagem += "----------------------------------------\n\n";
 
-  let total = 0;
-
-  carrinho.forEach((item) => {
-    const produto = produtosDisponiveis.find((p) => p.id === item.id);
-    if (!produto) return;
-
-    const subtotal = produto.preco * item.quantidade;
-    total += subtotal;
-
-    mensagem += `${produto.nome}\n`;
+  itens.forEach((item) => {
+    mensagem += `${item.nome}\n`;
     mensagem += `Quantidade: ${item.quantidade}\n`;
-    mensagem += `Valor: R$ ${subtotal.toFixed(2).replace(".", ",")}\n`;
+    mensagem += `Valor: R$ ${item.subtotal.toFixed(2).replace(".", ",")}\n`;
     mensagem += "----------------------------------------\n";
   });
 
-  mensagem += `\n*TOTAL DO PEDIDO:* R$ ${total.toFixed(2).replace(".", ",")}`;
+  mensagem += `\n*TOTAL DO PEDIDO:* R$ ${totalComFrete.toFixed(2).replace(".", ",")}`;
 
   const mensagemCodificada = encodeURIComponent(mensagem);
 
@@ -449,7 +593,10 @@ function finalizarPedido() {
     "_blank",
   );
 
+  pedidoParaConfirmar = null;
   carrinho = [];
   salvarCarrinho();
   renderizarCarrinho();
+
+  mostrarConteudo("conteudo-home");
 }

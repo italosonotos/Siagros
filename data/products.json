@@ -2,873 +2,873 @@
   {
     "id": 1,
     "nome": "Abacate",
-    "descricao": "Produzida por semente",
+    "descricao": "Cultivado a partir da semente. Desenvolve raízes fortes e profundas, ideal para quem busca uma árvore robusta e natural a longo prazo.",
     "preco": 10,
-    "imagem": "imagens/abacate.jpg",
+    "imagem": "image/abacate.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 2,
     "nome": "Abacate",
-    "descricao": "Enxertada",
+    "descricao": "Muda enxertada (feita com a união de uma planta produtora). Começa a dar abacates muito mais rápido do que uma muda comum.",
     "preco": 36,
-    "imagem": "imagens/abacate.jpg",
+    "imagem": "image/abacate.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 3,
     "nome": "Abricó de praia",
-    "descricao": "M",
+    "descricao": "Tamanho Médio. Árvore frutífera e ornamental com lindas flores, perfeita para regiões litorâneas por resistir bem à maresia.",
     "preco": 80,
-    "imagem": "imagens/abrico_de_praia.jpg",
+    "imagem": "image/abrico_de_praia.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 4,
     "nome": "Abricó de praia",
-    "descricao": "Gg",
+    "descricao": "Tamanho Gigante. Planta bem desenvolvida e robusta, ideal para quem quer um efeito visual imediato no jardim ou pomar.",
     "preco": 160,
-    "imagem": "imagens/abrico_de_praia.jpg",
+    "imagem": "image/abrico_de_praia.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 5,
     "nome": "Abricó de macaco",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda selecionada com raízes bem formadas. Famosa por suas flores exuberantes e frutos exóticos que crescem direto no tronco.",
     "preco": 100,
-    "imagem": "imagens/abrico_de_macaco.jpg",
+    "imagem": "image/abrico_de_macaco.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 6,
     "nome": "Açaí",
-    "descricao": "Do pará p",
+    "descricao": "Variedade legítima do Pará (Tamanho P). Palmeira de crescimento rápido e ótimo rendimento para produção de polpa.",
     "preco": 14,
-    "imagem": "imagens/acai.jpg",
+    "imagem": "image/acai.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 7,
     "nome": "Achachairu",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda premium de alta qualidade. Fruta exótica, doce e levemente ácida, muito produtiva e resistente a pragas.",
     "preco": 80,
-    "imagem": "imagens/achachairu.jpg",
+    "imagem": "image/achachairu.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 8,
     "nome": "Acerola",
-    "descricao": "Enxertada",
+    "descricao": "Muda enxertada de alta produtividade. Garante frutos grandes, suculentos e ricos em Vitamina C em pouco tempo de cultivo.",
     "preco": 14,
-    "imagem": "imagens/acerola.jpg",
+    "imagem": "image/acerola.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 9,
     "nome": "Abiu",
-    "descricao": "Amarelo",
+    "descricao": "Variedade do Abiu Amarelo. Produz frutos de casca brilhante e polpa incrivelmente doce e gelatinosa, nativa da Amazônia.",
     "preco": 70,
-    "imagem": "imagens/abiu.jpg",
+    "imagem": "image/abiu.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 10,
     "nome": "Abiu",
-    "descricao": "Verde",
+    "descricao": "Variedade do Abiu Verde. Planta resistente e adaptável, com frutos saborosos e exóticos para enriquecer seu pomar.",
     "preco": 20,
-    "imagem": "imagens/abiu.jpg",
+    "imagem": "image/abiu.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 11,
     "nome": "Ameixa",
-    "descricao": "Planta adulta",
+    "descricao": "Planta adulta e bem estruturada. Já passou pela fase jovem e está pronta para florescer e dar frutos na próxima estação.",
     "preco": 120,
-    "imagem": "imagens/ameixa.jpg",
+    "imagem": "image/ameixa.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 12,
     "nome": "Amora",
-    "descricao": "Gigante",
+    "descricao": "Variedade Amora Gigante. Planta muito vigorosa que produz frutos grandes, doces e escuros, excelente para vasos ou quintais.",
     "preco": 14,
-    "imagem": "imagens/amora.jpg",
+    "imagem": "image/amora.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 13,
     "nome": "Araçá-boi",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda saudável e pronta para o plantio. Produz o araçá amarelo, uma fruta muito perfumada e ideal para sucos, geleias e sorvetes.",
     "preco": 70,
-    "imagem": "imagens/araca_boi.jpg",
+    "imagem": "image/araca_boi.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 14,
     "nome": "Araticum",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda nativa selecionada. Fruta rústica do cerrado com polpa cremosa e sabor marcante, muito resistente ao clima seco.",
     "preco": 20,
-    "imagem": "imagens/araticum.jpg",
+    "imagem": "image/araticum.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 15,
     "nome": "Banana prata",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda clonal de excelente genética. Desenvolve bananeiras fortes com alta produção de cachos uniformes e saborosos.",
     "preco": 30,
-    "imagem": "imagens/banana_prata.jpg",
+    "imagem": "image/banana_prata.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 16,
     "nome": "Banana-da-terra (Pacovan)",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda vigorosa da variedade Pacovan. Perfeita para cozinhar, fritar ou fazer doces, com excelente aceitação no mercado.",
     "preco": 30,
-    "imagem": "imagens/banana_da_terra_pacovan.jpg",
+    "imagem": "image/banana_da_terra_pacovan.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 17,
     "nome": "Café Conilon",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda rústica e altamente produtiva. Variedade muito resistente a doenças, ideal para quem quer cultivar o próprio café em casa.",
     "preco": 14,
-    "imagem": "imagens/cafe_conilon.jpg",
+    "imagem": "image/cafe_conilon.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 18,
     "nome": "Cagaita",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda nativa de excelente qualidade. Árvore linda com frutos amarelos e ácidos, típica do cerrado e muito usada em doces.",
     "preco": 80,
-    "imagem": "imagens/cagaita.jpg",
+    "imagem": "image/cagaita.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 19,
     "nome": "Cajá-manga",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda jovem de rápido crescimento. Dá frutos em formato de cacho com sabor agridoce maravilhoso para consumo natural ou sucos.",
     "preco": 20,
-    "imagem": "imagens/caja_manga.jpg",
+    "imagem": "image/caja_manga.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 20,
     "nome": "Cajá-mirim",
-    "descricao": "Planta adulta",
+    "descricao": "Planta adulta e enraizada. Conhecida pela fartura de pequenos frutos amarelos muito aromáticos, perfeitos para polpas e refrescos.",
     "preco": 36,
-    "imagem": "imagens/caja_mirim.jpg",
+    "imagem": "image/caja_mirim.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 21,
     "nome": "Camu-camu",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda de alta qualidade da fruta com maior teor de Vitamina C do mundo! Planta que adora solos úmidos e produz pequenos frutos roxos.",
     "preco": 70,
-    "imagem": "imagens/camu_camu.jpg",
+    "imagem": "image/camu_camu.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 22,
     "nome": "Cabeludinha",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda saudável dessa frutífera nativa. Os frutos são amarelos, cobertos por uma leve penugem, doces e muito apreciados por pássaros.",
     "preco": 70,
-    "imagem": "imagens/cabeludinha.jpg",
+    "imagem": "image/cabeludinha.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 23,
     "nome": "Cacau",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda bem cuidada e pronta para o plantio. Perfeita para climas quentes e úmidos, permitindo colher o fruto base do chocolate no seu quintal.",
     "preco": 10,
-    "imagem": "imagens/cacau.jpg",
+    "imagem": "image/cacau.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 24,
     "nome": "Caju anão",
-    "descricao": "Produção precoce",
+    "descricao": "Muda de produção precoce. Por ser uma variedade anã, cresce menos em altura e começa a dar cajus grandes e suculentos muito mais cedo.",
     "preco": 14,
-    "imagem": "imagens/caju_anao.jpg",
+    "imagem": "image/caju_anao.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 25,
     "nome": "Cambucá amarela",
-    "descricao": "Gigante",
+    "descricao": "Variedade Gigante. Uma das frutas mais raras e saborosas da Mata Atlântica. Muda robusta com excelente potencial de crescimento.",
     "preco": 120,
-    "imagem": "imagens/cambuca_amarela.jpg",
+    "imagem": "image/cambuca_amarela.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 26,
     "nome": "Carambola",
-    "descricao": "Produzida por semente",
+    "descricao": "Cultivada por semente. Árvore de crescimento natural e equilibrado, produz as famosas frutas em formato de estrela.",
     "preco": 14,
-    "imagem": "imagens/carambola.jpg",
+    "imagem": "image/carambola.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 27,
     "nome": "Carambola",
-    "descricao": "Sacolão",
+    "descricao": "Tamanho Sacolão (Muda bem maior e mais velha). Já vem em embalagem grande com raízes maduras, acelerando a primeira colheita.",
     "preco": 40,
-    "imagem": "imagens/carambola.jpg",
+    "imagem": "image/carambola.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 28,
     "nome": "Caqui",
-    "descricao": "Planta adulta",
+    "descricao": "Planta adulta e pronta para produção. Tronco firme e galhos formados, ideal para quem quer colher caquis doces e firmes sem esperar anos.",
     "preco": 120,
-    "imagem": "imagens/caqui.jpg",
+    "imagem": "image/caqui.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 29,
     "nome": "Cereja europeia",
-    "descricao": "Enxertada",
+    "descricao": "Muda enxertada de clima temperado. Técnica de enxertia que permite o cultivo bem-sucedido e produção rápida da autêntica cereja.",
     "preco": 120,
-    "imagem": "imagens/cereja_europeia.jpg",
+    "imagem": "image/cereja_europeia.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 30,
     "nome": "Cereja deadagascar",
-    "descricao": "M",
+    "descricao": "Tamanho Médio. Arbusto exótico com espinhos ornamentais que produz frutos vermelhos e roxos, ótimos para consumo ou geleias.",
     "preco": 80,
-    "imagem": "imagens/cereja_deadagascar.jpg",
+    "imagem": "image/cereja_deadagascar.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 31,
     "nome": "Cereja-do-Rio-Grande",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda de excelente linhagem nativa. Árvore muito bonita que dá cerejas pretas e doces, excelente tanto para o pomar quanto para o paisagismo.",
     "preco": 80,
-    "imagem": "imagens/cereja_do_rio_grande.jpg",
+    "imagem": "image/cereja_do_rio_grande.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 32,
     "nome": "Seriguela",
-    "descricao": "Produzida por estaquia",
+    "descricao": "Produzida por estaquia (feita a partir do galho de uma árvore que já dava frutos). Isso garante que ela comece a produzir super rápido.",
     "preco": 14,
-    "imagem": "imagens/seriguela.jpg",
+    "imagem": "image/seriguela.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 33,
     "nome": "Coqueiro anão",
-    "descricao": "Produção precoce",
+    "descricao": "Muda selecionada de produção precoce. Começa a produzir água de coco doce com o coqueiro ainda baixo, facilitando muito a colheita.",
     "preco": 20,
-    "imagem": "imagens/coqueiro_anao.jpg",
+    "imagem": "image/coqueiro_anao.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 34,
     "nome": "Canela",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda saudável da árvore da canela. Além de produzir a famosa especiaria através de sua casca, possui folhas muito aromáticas.",
     "preco": 16,
-    "imagem": "imagens/canela.jpg",
+    "imagem": "image/canela.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 35,
     "nome": "Cravo-da-Índia",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda de alta qualidade dessa famosa especiaria. Seus botões florais secos dão origem ao cravo, além de ser uma árvore linda e perfumada.",
     "preco": 16,
-    "imagem": "imagens/cravo_da_india.jpg",
+    "imagem": "image/cravo_da_india.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 36,
     "nome": "Figo",
-    "descricao": "Produzida por estaquia",
+    "descricao": "Muda feita por estaquia (enraizada a partir de um galho produtor). Perfeita para plantio em vasos, produz figos doces em poucos meses.",
     "preco": 36,
-    "imagem": "imagens/figo.jpg",
+    "imagem": "image/figo.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 37,
     "nome": "Fruta-do-milagre",
-    "descricao": "P",
+    "descricao": "Tamanho Pequeno. Planta exótica cujos frutos têm a propriedade incrível de fazer qualquer alimento azedo parecer extremamente doce.",
     "preco": 50,
-    "imagem": "imagens/fruta_do_milagre.jpg",
+    "imagem": "image/fruta_do_milagre.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 38,
     "nome": "Fruta-do-milagre",
-    "descricao": "Planta adulta",
+    "descricao": "Planta adulta e já em fase de frutificação. Ideal para quem quer impressionar visitas com a experiência mágica de transformar o azedo em doce.",
     "preco": 180,
-    "imagem": "imagens/fruta_do_milagre.jpg",
+    "imagem": "image/fruta_do_milagre.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 39,
     "nome": "Fruta-do-sabiá",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda de rápido crescimento. Produz pequenos frutos doces em abundância que atraem dezenas de espécies de pássaros para o seu jardim.",
     "preco": 70,
-    "imagem": "imagens/fruta_do_sabia.jpg",
+    "imagem": "image/fruta_do_sabia.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 40,
     "nome": "Gabiroba",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda nativa muito resistente. Produz frutinhas amarelas com sabor silvestre e adocicado, ótimas para comer direto do pé.",
     "preco": 70,
-    "imagem": "imagens/gabiroba.jpg",
+    "imagem": "image/gabiroba.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 41,
     "nome": "Goiaba branca",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda de excelente linhagem. Desenvolve uma árvore de porte médio que produz goiabas de polpa branca, muito doces e ideais para consumo fresco.",
     "preco": 14,
-    "imagem": "imagens/goiaba_branca.jpg",
+    "imagem": "image/goiaba_branca.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 42,
-    "nome": "Goiabaaluma",
-    "descricao": "Produzida por semente",
+    "nome": "Goiaba Paluma",
+    "descricao": "Cultivada por semente. Processo natural que gera uma árvore forte, rústica e com longa expectativa de vida produtiva.",
     "preco": 10,
-    "imagem": "imagens/goiabaaluma.jpg",
+    "imagem": "image/goiabaaluma.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 43,
-    "nome": "Goiabaaluma",
-    "descricao": "Produzida por estaquia",
+    "nome": "Goiaba Paluma",
+    "descricao": "Produzida por estaquia (clone de planta produtora). Mantém a qualidade exata da planta mãe e começa a dar frutos muito mais jovem.",
     "preco": 14,
-    "imagem": "imagens/goiabaaluma.jpg",
+    "imagem": "image/goiaba paluma.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 44,
     "nome": "Goiaba tailandesa",
-    "descricao": "Produzida por estaquia",
+    "descricao": "Muda feita por estaquia. Famosa por produzir goiabas gigantescas, crocantes e muito doces, com padrão de exportação.",
     "preco": 24,
-    "imagem": "imagens/goiaba_tailandesa.jpg",
+    "imagem": "image/goiaba_tailandesa.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 45,
     "nome": "Goiaba",
-    "descricao": "Roxa",
+    "descricao": "Variedade de Goiaba Roxa. Tanto as folhas quanto os frutos têm uma linda cor roxa, sendo uma planta altamente ornamental e saborosa.",
     "preco": 50,
-    "imagem": "imagens/goiaba.jpg",
+    "imagem": "image/goiaba.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 46,
     "nome": "Grumixama",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda premium dessa joia da Mata Atlântica. Conhecida como a cereja brasileira, tem sabor doce inigualável e árvore muito elegante.",
     "preco": 80,
-    "imagem": "imagens/grumixama.jpg",
+    "imagem": "image/grumixama.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 47,
     "nome": "Groselha",
-    "descricao": "Verde",
+    "descricao": "Variedade Verde. Arbusto de pequeno porte ideal para pequenos espaços, produz frutos ácidos excelentes para xaropes, doces e geleias.",
     "preco": 80,
-    "imagem": "imagens/groselha.jpg",
+    "imagem": "image/groselha.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 48,
     "nome": "Guaraná",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda vigorosa da autêntica planta do guaraná. Arbusto trepador que produz os famosos frutos vermelhos que parecem 'olhos'.",
     "preco": 16,
-    "imagem": "imagens/guarana.jpg",
+    "imagem": "image/guarana.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 49,
     "nome": "Graviola",
-    "descricao": "Produzida por semente",
+    "descricao": "Cultivada por semente. Desenvolve uma árvore imponente com frutos grandes de polpa branca, sabor agridoce e ótimos para sucos.",
     "preco": 14,
-    "imagem": "imagens/graviola.jpg",
+    "imagem": "image/graviola.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 50,
     "nome": "Jabuticaba Sabará",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda da variedade mais famosa e doce de jabuticaba. Frutos de casca fina e polpa deliciosa, cresce de forma muito bonita.",
     "preco": 30,
-    "imagem": "imagens/jabuticaba_sabara.jpg",
+    "imagem": "image/jabuticaba_sabara.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 51,
     "nome": "Jabuticaba",
-    "descricao": "Híbrida",
+    "descricao": "Variedade Híbrida jovem. Tem a grande vantagem de produzir várias vezes ao ano e começar a dar frutos muito mais jovem que as outras.",
     "preco": 30,
-    "imagem": "imagens/jabuticaba.jpg",
+    "imagem": "image/jabuticaba.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 52,
     "nome": "Jabuticaba",
-    "descricao": "Híbrida",
+    "descricao": "Variedade Híbrida de porte maior. Árvore já formada e aclimatada, ideal para quem quer produção de jabuticabas em curto prazo.",
     "preco": 80,
-    "imagem": "imagens/jabuticaba.jpg",
+    "imagem": "image/jabuticaba.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 53,
     "nome": "Jabuticabeira",
-    "descricao": "Planta adulta",
+    "descricao": "Planta adulta e robusta. Pronta para se tornar o destaque do seu quintal, com estrutura forte para garantir fartura de frutos direto no tronco.",
     "preco": 180,
-    "imagem": "imagens/jabuticabeira.jpg",
+    "imagem": "image/jabuticabeira.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 54,
     "nome": "Jabuticaba Olho de Boi",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda da variedade que produz as maiores jabuticabas que existem! Frutos gigantes, muito suculentos e com sabor inesquecível.",
     "preco": 40,
-    "imagem": "imagens/jabuticaba_olho_de_boi.jpg",
+    "imagem": "image/jabuticaba_olho_de_boi.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 55,
     "nome": "Ingá",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda saudável de rápido crescimento. Produz longas vagens verdes com uma polpa branca, fofa e adocicada que as crianças adoram.",
     "preco": 70,
-    "imagem": "imagens/inga.jpg",
+    "imagem": "image/inga.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 56,
     "nome": "Jaca dura",
-    "descricao": "Produzida por semente",
+    "descricao": "Cultivada por semente. Árvore de grande porte, rústica e resistente, que produz jacas com gomos firmes e crocantes.",
     "preco": 12,
-    "imagem": "imagens/jaca_dura.jpg",
+    "imagem": "image/jaca_dura.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 57,
     "nome": "Jaca dura",
-    "descricao": "Enxertada",
+    "descricao": "Muda enxertada de alta linhagem. Garante gomos bem crocantes e doces, reduzindo drasticamente o tempo de espera para a primeira jaca.",
     "preco": 100,
-    "imagem": "imagens/jaca_dura.jpg",
+    "imagem": "image/jaca_dura.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 58,
     "nome": "Jaca mole",
-    "descricao": "Enxertada",
+    "descricao": "Muda enxertada de excelente qualidade. Produz jacas com gomos extremamente macios, doces e muito perfumados, fáceis de saborear.",
     "preco": 100,
-    "imagem": "imagens/jaca_mole.jpg",
+    "imagem": "image/jaca_mole.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 59,
     "nome": "Jamelão roxo",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda vigorosa. Árvore de sombra maravilhosa que produz pequenos frutos roxos que tingem a boca, com propriedades medicinais comprovadas.",
     "preco": 20,
-    "imagem": "imagens/jamelao_roxo.jpg",
+    "imagem": "image/jamelao_roxo.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 60,
     "nome": "Jenipapo",
-    "descricao": "Branco",
+    "descricao": "Variedade tradicional do Jenipapo Branco. Fruto muito aromático utilizado historicamente para fazer o famoso licor de jenipapo e doces.",
     "preco": 14,
-    "imagem": "imagens/jenipapo.jpg",
+    "imagem": "image/jenipapo.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 61,
     "nome": "Jenipapo",
-    "descricao": "Enxertada",
+    "descricao": "Muda enxertada. Traz a vantagem de frutificar bem mais cedo e manter o padrão de doçura e tamanho dos frutos da planta mãe.",
     "preco": 30,
-    "imagem": "imagens/jenipapo.jpg",
+    "imagem": "image/jenipapo.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 62,
     "nome": "Jenipapo sem",
-    "descricao": "Produzida por semente",
+    "descricao": "Cultivada por semente selecionada. Árvore nativa imponente com excelente sistema de raízes, perfeita para reflorestamento ou pomares grandes.",
     "preco": 80,
-    "imagem": "imagens/jenipapo_sem.jpg",
+    "imagem": "image/jenipapo_sem.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 63,
     "nome": "Jambo",
-    "descricao": "Amarelo",
+    "descricao": "Variedade do Jambo Amarelo. Fruto exótico e raro, com sabor suave e perfume floral marcante, muito ornamental.",
     "preco": 80,
-    "imagem": "imagens/jambo.jpg",
+    "imagem": "image/jambo.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 64,
     "nome": "Jambo",
-    "descricao": "Menor",
+    "descricao": "Muda jovem (Tamanho Menor). Ideal para quem quer acompanhar todo o crescimento da planta e gastar pouco.",
     "preco": 14,
-    "imagem": "imagens/jambo.jpg",
+    "imagem": "image/jambo.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 65,
     "nome": "Jambo",
-    "descricao": "Maior",
+    "descricao": "Muda desenvolvida (Tamanho Maior). Planta com excelente estrutura de galhos e tronco mais firme, economizando tempo de cultivo.",
     "preco": 30,
-    "imagem": "imagens/jambo.jpg",
+    "imagem": "image/jambo.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 66,
     "nome": "Jambo",
-    "descricao": "Vermelho",
+    "descricao": "Variedade do Jambo Vermelho tradicional. Fruto em formato de pera, com casca vermelha brilhante e polpa branca, crocante e refrescante.",
     "preco": 20,
-    "imagem": "imagens/jambo.jpg",
+    "imagem": "image/jambo.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 67,
     "nome": "Jambo de cacho",
-    "descricao": "Planta adulta",
+    "descricao": "Planta adulta de Jambo de Cacho. Conhecida por produzir frutos agrupados em grande quantidade, criando um visual espetacular no pomar.",
     "preco": 60,
-    "imagem": "imagens/jambo_de_cacho.jpg",
+    "imagem": "image/jambo_de_cacho.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 68,
     "nome": "Laranjaêra",
-    "descricao": "Enxertada",
+    "descricao": "Muda cítrica enxertada. Garante boa resistência a doenças de raiz e acelera a produção de laranjas doces e com bastante suco.",
     "preco": 30,
-    "imagem": "imagens/laranjaera.jpg",
+    "imagem": "image/laranjaera.jpeg",
     "categoria": "Cítricas"
   },
   {
     "id": 69,
     "nome": "Laranja Bahia",
-    "descricao": "Enxertada",
+    "descricao": "Muda enxertada da famosa Laranja de Umbigo. Frutos grandes, fáceis de descascar, sem sementes e extremamente doces para comer fresca.",
     "preco": 50,
-    "imagem": "imagens/laranja_bahia.jpg",
+    "imagem": "image/laranja_bahia.jpeg",
     "categoria": "Cítricas"
   },
   {
     "id": 70,
     "nome": "Laranja Lima",
-    "descricao": "Enxertada",
+    "descricao": "Muda enxertada. Produz a laranja com menor acidez do mercado, sendo a mais recomendada para bebês e pessoas com estômago sensível.",
     "preco": 50,
-    "imagem": "imagens/laranja_lima.jpg",
+    "imagem": "image/laranja_lima.jpeg",
     "categoria": "Cítricas"
   },
   {
     "id": 71,
     "nome": "Laranja sangue",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda premium dessa variedade exótica. Produz laranjas com a polpa vermelha escura, sabor único que lembra framboesa e alto teor de antioxidantes.",
     "preco": 50,
-    "imagem": "imagens/laranja_sangue.jpg",
+    "imagem": "image/laranja_sangue.jpeg",
     "categoria": "Cítricas"
   },
   {
     "id": 72,
     "nome": "Limãoirim (Galego)",
-    "descricao": "M",
+    "descricao": "Tamanho Médio. Pequeno no tamanho, mas gigante no caldo! Limão muito aromático, perfeito para temperos, sucos e caipirinhas.",
     "preco": 50,
-    "imagem": "imagens/limaoirim_galego.jpg",
+    "imagem": "image/limaoirim_galego.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 73,
     "nome": "Limão Tahiti",
-    "descricao": "Enxertada",
+    "descricao": "Muda enxertada campeã de vendas. Produz o ano inteiro limões sem semente, com muito suco e casca lisa, ideal para o dia a dia.",
     "preco": 50,
-    "imagem": "imagens/limao_tahiti.jpg",
+    "imagem": "image/limao_tahiti.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 74,
     "nome": "Limão Siciliano",
-    "descricao": "Enxertada",
+    "descricao": "Muda enxertada do autêntico limão amarelo europeu. Casca grossa e perfumada, muito usado na alta gastronomia e na fabricação de licores.",
     "preco": 50,
-    "imagem": "imagens/limao_siciliano.jpg",
+    "imagem": "image/limao_siciliano.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 75,
     "nome": "Longana (Olho do Dragão)",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda de parente próxima da lichia. Fruta asiática de casca durinha e polpa translúcida muito doce, excelente para colecionadores de frutas.",
     "preco": 80,
-    "imagem": "imagens/longana_olho_do_dragao.jpg",
+    "imagem": "image/longana_olho_do_dragao.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 76,
     "nome": "Tangerinaonkan",
-    "descricao": "Enxertada",
+    "descricao": "Muda enxertada da tangerina mais querida. Frutos grandes, fáceis de descascar com as mãos e gomos muito doces e suculentos.",
     "preco": 50,
-    "imagem": "imagens/tangerinaonkan.jpg",
+    "imagem": "image/tangerinaonkan.jpeg",
     "categoria": "Cítricas"
   },
   {
     "id": 77,
     "nome": "Tangerinaexerica",
-    "descricao": "Enxertada",
+    "descricao": "Muda enxertada da Mexerica tradicional. Sabor marcante, excelente acidez equilibrada e aquele aroma irresistível que perfuma o ambiente ao descascar.",
     "preco": 50,
-    "imagem": "imagens/tangerinaexerica.jpg",
+    "imagem": "image/tangerinaexerica.jpeg",
     "categoria": "Cítricas"
   },
   {
     "id": 78,
     "nome": "Manga Espada",
-    "descricao": "Enxertada",
+    "descricao": "Muda enxertada de uma das variedades mais tradicionais do Brasil. Fruto alongado, muito fibroso e com aquele sabor doce de infância.",
     "preco": 20,
-    "imagem": "imagens/manga_espada.jpg",
+    "imagem": "image/manga_espada.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 79,
     "nome": "Mangaalmer",
-    "descricao": "Enxertada",
+    "descricao": "Muda enxertada. Produz mangas de tamanho grande, casca avermelhada e polpa firme quase sem fiapos, excelente para comer de colher.",
     "preco": 20,
-    "imagem": "imagens/mangaalmer.jpg",
+    "imagem": "image/mangaalmer.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 80,
     "nome": "Manga Tommy",
-    "descricao": "Enxertada",
+    "descricao": "Muda enxertada da variedade mais comercial. Frutos lindos com tons de vermelho e amarelo, excelente durabilidade após colhidos e polpa firme.",
     "preco": 20,
-    "imagem": "imagens/manga_tommy.jpg",
+    "imagem": "image/manga_tommy.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 81,
     "nome": "Manga Rosa",
-    "descricao": "Enxertada",
+    "descricao": "Muda enxertada da Manga Rosa nordestina. Extremamente perfumada, muito suculenta e com sabor marcante, ideal para sucos ou consumo natural.",
     "preco": 20,
-    "imagem": "imagens/manga_rosa.jpg",
+    "imagem": "image/manga_rosa.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 82,
     "nome": "Mangaba",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda nativa de excelente qualidade. Fruta típica do Nordeste com polpa cremosa e sabor único, muito disputada para sorvetes e doces.",
     "preco": 20,
-    "imagem": "imagens/mangaba.jpg",
+    "imagem": "image/mangaba.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 83,
     "nome": "Maçã Eva",
-    "descricao": "Planta adulta",
+    "descricao": "Planta adulta adaptada ao clima quente. Variedade especial desenvolvida para produzir maçãs lindas e crocantes mesmo em regiões sem frio intenso.",
     "preco": 120,
-    "imagem": "imagens/maca_eva.jpg",
+    "imagem": "image/maca_eva.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 84,
     "nome": "Mapati",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda da Uva da Amazônia. Árvore ornamental de crescimento rápido que produz frutos parecidos com uvas, mas que crescem em troncos baixos.",
     "preco": 80,
-    "imagem": "imagens/mapati.jpg",
+    "imagem": "image/mapati.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 85,
     "nome": "Mirtilo",
-    "descricao": "Planta adulta",
+    "descricao": "Planta adulta de Blueberry (Mirtilo). Já bem desenvolvida e pronta para gerar essas pequenas frutas roxas consideradas superalimentos.",
     "preco": 120,
-    "imagem": "imagens/mirtilo.jpg",
+    "imagem": "image/mirtilo.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 86,
     "nome": "Morango",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda enraizada e saudável. Perfeita para vasos suspensos ou canteiros, começa a soltar estolões (novos raminhos) e frutos rapidamente.",
     "preco": 18,
-    "imagem": "imagens/morango.jpg",
+    "imagem": "image/morango.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 87,
     "nome": "Nêspera grande",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda da famosa Ameixa Amarela. Produz frutos de casca aveludada com sabor doce e suave, árvore muito bonita e resistente ao vento.",
     "preco": 80,
-    "imagem": "imagens/nespera_grande.jpg",
+    "imagem": "image/nespera_grande.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 88,
     "nome": "Oliveira",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda premium da árvore que produz a azeitona. Planta milenar, super resistente à falta de água e com alto valor ornamental para jardins nobres.",
     "preco": 260,
-    "imagem": "imagens/oliveira.jpg",
+    "imagem": "image/oliveira.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 89,
     "nome": "Pêssego",
-    "descricao": "Planta adulta",
+    "descricao": "Planta adulta de pêssego adaptado. Estrutura pronta para suportar os frutos aveludados e doces, excelente opção para pomares domésticos.",
     "preco": 120,
-    "imagem": "imagens/pessego.jpg",
+    "imagem": "image/pessego.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 90,
     "nome": "Pimenta-do-reino",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda dessa famosa trepadeira agrícola. Cultive em casa os cachos de pimenta que podem ser colhidos verdes, vermelhos ou secos para moer.",
     "preco": 20,
-    "imagem": "imagens/pimenta_do_reino.jpg",
+    "imagem": "image/pimenta_do_reino.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 91,
     "nome": "Pinha",
-    "descricao": "Híbrida",
+    "descricao": "Variedade Híbrida (Fruta-do-conde). Produz frutos grandes com gomos muito doces e cremosos, com menor incidência de sementes.",
     "preco": 14,
-    "imagem": "imagens/pinha.jpg",
+    "imagem": "image/pinha.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 92,
     "nome": "Pitomba",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda nativa resistente. Árvore frutífera muito ornamental que produz frutinhas de casca dura com polpa azedinha e viciante.",
     "preco": 14,
-    "imagem": "imagens/pitomba.jpg",
+    "imagem": "image/pitomba.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 93,
     "nome": "Pitanga",
-    "descricao": "Vermelha",
+    "descricao": "Variedade Vermelha tradicional. Arbusto de crescimento rápido, folhas perfumadas e frutos muito refrescantes que fazem a alegria de pássaros.",
     "preco": 10,
-    "imagem": "imagens/pitanga.jpg",
+    "imagem": "image/pitanga.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 94,
     "nome": "Pitanga preta (de mesa)",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda selecionada. Esta variedade produz pitangas quase pretas quando maduras, sendo muito menos ácidas e muito mais doces que a vermelha.",
     "preco": 30,
-    "imagem": "imagens/pitanga_preta_de_mesa.jpg",
+    "imagem": "image/pitanga_preta_de_mesa.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 95,
     "nome": "Pitaya branca",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda de cacto produtor (Clado). Casca rosa choque por fora e polpa branca com sementinhas crocantes por dentro, muito refrescante.",
     "preco": 20,
-    "imagem": "imagens/pitaya_branca.jpg",
+    "imagem": "image/pitaya_branca.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 96,
     "nome": "Pitaya amarela",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda da variedade com casca amarela e espinhos (que saem ao amadurecer). É considerada a variedade de pitaya mais doce do mundo.",
     "preco": 20,
-    "imagem": "imagens/pitaya_amarela.jpg",
+    "imagem": "image/pitaya_amarela.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 97,
     "nome": "Pitaya",
-    "descricao": "Vermelha",
+    "descricao": "Variedade com Polpa Vermelha. Rica em antioxidantes, tem uma cor vibrante linda e sabor levemente mais marcante que a branca.",
     "preco": 20,
-    "imagem": "imagens/pitaya.jpg",
+    "imagem": "image/pitaya.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 98,
     "nome": "Pitaya",
-    "descricao": "Vietnamense white",
+    "descricao": "Variedade legítima Vietnamense White. Genética importada de alta produtividade, frutos grandes com polpa branca muito firme e comercial.",
     "preco": 20,
-    "imagem": "imagens/pitaya.jpg",
+    "imagem": "image/pitaya.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 99,
     "nome": "Pitaya",
-    "descricao": "Vermelha",
+    "descricao": "Variedade comercial vermelha. Perfeita para quem busca produção rápida e frutos de visual impressionante para comercializar ou consumir.",
     "preco": 20,
-    "imagem": "imagens/pitaya.jpg",
+    "imagem": "image/pitaya.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 100,
     "nome": "Rambutã",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda da 'Lichia cabeluda'. Fruta exótica asiática com visual único e polpa incrivelmente doce, ideal para diversificar o pomar.",
     "preco": 16,
-    "imagem": "imagens/rambuta.jpg",
+    "imagem": "image/rambuta.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 101,
     "nome": "Romã",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda resistente e de fácil cultivo. Pode ser plantada em vasos, produzindo frutos de casca dura cheios de sementes vermelhas e terapêuticas.",
     "preco": 10,
-    "imagem": "imagens/roma.jpg",
+    "imagem": "image/roma.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 102,
     "nome": "Kiwi",
-    "descricao": "Planta adulta",
+    "descricao": "Planta adulta dessa famosa trepadeira frutífera. Necessita de suporte (como uma parreira) para se espalhar e produzir frutos peludinhos e deliciosos.",
     "preco": 120,
-    "imagem": "imagens/kiwi.jpg",
+    "imagem": "image/kiwi.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 103,
     "nome": "Sapota",
-    "descricao": "Enxertada",
+    "descricao": "Muda enxertada de Sapota Chocolate. Produz frutos cuja polpa, quando bem madura, lembra a textura e cor de um mousse de chocolate.",
     "preco": 60,
-    "imagem": "imagens/sapota.jpg",
+    "imagem": "image/sapota.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 104,
     "nome": "Umbu",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda jovem dessa árvore sagrada do sertão. Muito resistente à seca, produz frutos verdes e suculentos com sabor agridoce maravilhoso.",
     "preco": 20,
-    "imagem": "imagens/umbu.jpg",
+    "imagem": "image/umbu.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 105,
     "nome": "Umbu",
-    "descricao": "Enxertada",
+    "descricao": "Muda enxertada de Umbu de tamanho grande. Desenvolvida para produzir frutos maiores e com polpa mais espessa em menos tempo.",
     "preco": 50,
-    "imagem": "imagens/umbu.jpg",
+    "imagem": "image/umbu.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 106,
     "nome": "Urucum",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda saudável. Árvore de lindas flores que produz cápsulas cheias de sementes vermelhas, usadas para fazer o colorau natural de cozinha.",
     "preco": 14,
-    "imagem": "imagens/urucum.jpg",
+    "imagem": "image/urucum.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 107,
     "nome": "Uvaia",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda de alta qualidade da Mata Atlântica. Fruto amarelo, muito ácido e perfumado, riquíssimo em vitamina C e muito disputado para sucos e geleias gourmet.",
     "preco": 80,
-    "imagem": "imagens/uvaia.jpg",
+    "imagem": "image/uvaia.jpeg",
     "categoria": "Frutíferas"
   },
   {
     "id": 108,
     "nome": "Citronela",
-    "descricao": "Maior",
+    "descricao": "Planta em tamanho maior. Excelente repelente natural contra mosquitos e pernilongos, ideal para plantar perto de portas, janelas ou caminhos.",
     "preco": 60,
-    "imagem": "imagens/citronela.jpg",
+    "imagem": "image/citronela.jpeg",
     "categoria": "Nativas"
   },
   {
     "id": 109,
     "nome": "Ora-pro-nóbis",
-    "descricao": "Muda de alta qualidade",
+    "descricao": "Muda dessa famosa PANC (Planta Alimentícia Não Convencional). Cacto trepador com folhas super nutritivas e ricas em proteínas, ferro e fibras.",
     "preco": 20,
-    "imagem": "imagens/ora_pro_nobis.jpg",
+    "imagem": "image/ora_pro_nobis.jpeg",
     "categoria": "Nativas"
   }
 ]

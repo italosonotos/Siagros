@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="image/icon-svg.svg"
     <title>SI Plantas - Mudas Premium</title>
     <!-- Google Fonts para tipografia limpa e moderna -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -87,7 +88,10 @@
     </header>
 
     <!-- BANNER HERO (PRINCIPAL) -->
-    <section class="hero-banner">
+    <!-- COMENTÁRIO: tem id próprio para poder ser escondido sozinho quando
+         abrirmos a página de um produto, SEM afetar o carrinho (que fica
+         fora daqui, sempre acessível pelo botão do cabeçalho). -->
+    <section class="hero-banner" id="hero-banner">
       <div class="hero-content">
         <h1>Mudas Premium para seu Pomar</h1>
         <button class="btn-primary">Comprar em nosso pomar</button>
@@ -102,13 +106,97 @@
 
     <!-- CONTAINER PRINCIPAL (LAYOUT DUAS COLUNAS EM DESKTOP / FLUIDO NO MOBILE) -->
     <main class="main-container">
-      <!-- COLUNA ESQUERDA: CATEGORIAS E PRODUTOS -->
+      <!-- COLUNA ESQUERDA: aqui dentro alternamos entre o conteúdo da home
+           (busca + categorias + produtos) e o conteúdo do produto aberto.
+           O carrinho (aside logo abaixo) NÃO faz parte dessa troca, então
+           continua sempre acessível. -->
       <div class="content-left">
-        <!-- CAMPO DE PESQUISA -->
-        <section class="search-section">
-          <div class="search-box">
+
+        <!-- ============ CONTEÚDO DA HOME ============ -->
+        <div id="conteudo-home">
+          <!-- CAMPO DE PESQUISA -->
+          <section class="search-section">
+            <div class="search-box">
+              <svg
+                class="search-icon"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input
+                type="text"
+                id="campo-busca"
+                placeholder="Buscar plantas frutíferas, cítricas, nativas ou ornamentais..."
+              />
+            </div>
+          </section>
+
+          <!-- SEÇÃO DE CATEGORIAS (Cards Coloridos) -->
+          <section class="categories-section">
+            <h2 class="section-title">Principais categorias</h2>
+            <div class="categories-grid">
+              <!-- Cada card tem um background verde sutil e representação visual -->
+              <div
+                class="category-card cat-frutiferas"
+                data-categoria="Frutíferas"
+              >
+                <div class="category-info">
+                  <span class="category-emoji">🥭</span>
+                  <span class="category-name">Frutíferas</span>
+                </div>
+              </div>
+              <div class="category-card cat-citricas" data-categoria="Cítricas">
+                <div class="category-info">
+                  <span class="category-emoji">🍋</span>
+                  <span class="category-name">Cítricas</span>
+                </div>
+              </div>
+              <div
+                class="category-card cat-ornamentais"
+                data-categoria="Ornamentais"
+              >
+                <div class="category-info">
+                  <span class="category-emoji">🌴</span>
+                  <span class="category-name">Ornamentais</span>
+                </div>
+              </div>
+              <div class="category-card cat-nativas" data-categoria="Nativas">
+                <div class="category-info">
+                  <span class="category-emoji">🌱</span>
+                  <span class="category-name">Nativas</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SEÇÃO DE PRODUTOS -->
+          <section class="products-section">
+            <h2 class="section-title">Produtos em destaque</h2>
+
+            <!-- COMENTÁRIO: Esta é a grade dinâmica onde o JavaScript irá renderizar todos os seus produtos do JSON -->
+            <div class="products-grid" id="produtos-container">
+              <!-- Exemplo de Card Estático 1 -->
+              <div class="product-card">
+                <!-- Os detalhes do produto (imagem, nome, preço, botão) vão aqui dentro se você quiser deixar um modelo visual -->
+              </div>
+            </div>
+            <div class="pagination" id="pagination-container"></div>
+          </section>
+        </div>
+        <!-- FIM DE #conteudo-home -->
+
+        <!-- ============ CONTEÚDO DA PÁGINA DE DETALHE DO PRODUTO ============ -->
+        <!-- Escondida por padrão. O JS preenche os dados e mostra esse bloco
+             (junto com o botão de voltar) quando o usuário clica em um produto. -->
+        <div id="conteudo-detalhe" style="display: none">
+          <button class="back-button" id="btn-voltar" onclick="voltarInicio()">
             <svg
-              class="search-icon"
               width="18"
               height="18"
               viewBox="0 0 24 24"
@@ -116,150 +204,180 @@
               stroke="currentColor"
               stroke-width="2"
             >
-              <circle cx="11" cy="11" r="8"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
             </svg>
-            <input
-              type="text"
-              id="campo-busca"
-              placeholder="Buscar plantas frutíferas, cítricas, nativas ou ornamentais..."
-            />
-          </div>
-        </section>
+            Voltar para o início
+          </button>
 
-        <!-- SEÇÃO DE CATEGORIAS (Cards Coloridos) -->
-        <section class="categories-section">
-          <h2 class="section-title">Principais categorias</h2>
-          <div class="categories-grid">
-            <!-- Cada card tem um background verde sutil e representação visual -->
-            <div
-              class="category-card cat-frutiferas"
-              data-categoria="Frutíferas"
-            >
-              <div class="category-info">
-                <span class="category-emoji">🥭</span>
-                <span class="category-name">Frutíferas</span>
-              </div>
+          <div class="product-detail-content">
+            <div class="product-detail-image">
+              <img id="detalhe-imagem" src="" alt="" />
             </div>
-            <div class="category-card cat-citricas" data-categoria="Cítricas">
-              <div class="category-info">
-                <span class="category-emoji">🍋</span>
-                <span class="category-name">Cítricas</span>
-              </div>
-            </div>
-            <div
-              class="category-card cat-ornamentais"
-              data-categoria="Ornamentais"
-            >
-              <div class="category-info">
-                <span class="category-emoji">🌴</span>
-                <span class="category-name">Ornamentais</span>
-              </div>
-            </div>
-            <div class="category-card cat-nativas" data-categoria="Nativas">
-              <div class="category-info">
-                <span class="category-emoji">🌱</span>
-                <span class="category-name">Nativas</span>
-              </div>
-            </div>
-          </div>
-        </section>
 
-        <!-- SEÇÃO DE PRODUTOS -->
-        <section class="products-section">
-          <h2 class="section-title">Produtos em destaque</h2>
+            <div class="product-detail-info">
+              <h2 id="detalhe-nome"></h2>
+              <p class="product-detail-price" id="detalhe-preco"></p>
+              <p class="product-detail-desc" id="detalhe-descricao"></p>
 
-          <!-- COMENTÁRIO: Esta é a grade dinâmica onde o JavaScript irá renderizar todos os seus produtos do JSON -->
-          <div class="products-grid" id="produtos-container">
-            <!-- Exemplo de Card Estático 1 -->
-            <div class="product-card">
-              <!-- Os detalhes do produto (imagem, nome, preço, botão) vão aqui dentro se você quiser deixar um modelo visual -->
-            </div>
-          </div>
-          <div class="pagination" id="pagination-container"></div>
-        </section>
-      </div>
-
-      <!-- COLUNA DIREITA: CARRINHO DE COMPRAS FIXADO (Perfeito para desktop, vira overlay/gaveta no mobile) -->
-      <aside class="cart-sidebar" id="cart-sidebar">
-        <div class="cart-container">
-          <div class="cart-header">
-            <h2>Meu Carrinho</h2>
-            <!-- Botão de fechar (relevante principalmente no Mobile) -->
-            <button class="close-cart-btn" aria-label="Fechar carrinho">
-              &times;
-            </button>
-          </div>
-
-          <!-- Lista de itens do Carrinho -->
-          <!-- COMENTÁRIO: O JavaScript irá limpar e popular esta div conforme o cliente adiciona itens -->
-          <div class="cart-items" id="carrinho-itens">
-            <!-- Item de Exemplo 1 -->
-            <div class="cart-item">
-              <button class="remove-item" title="Remover item">&times;</button>
-            </div>
-          </div>
-
-          <!-- Resumo financeiro do Carrinho -->
-          <div class="cart-summary">
-            <h3>Resumo do Pedido</h3>
-            <div class="summary-line">
-              <span>Subtotal</span>
-              <span id="cart-subtotal">R$ 0,00</span>
-            </div>
-            <div class="summary-line">
-              <span>Frete</span>
-              <span id="cart-frete">R$ 0,00</span>
-            </div>
-            <div class="summary-line total-line">
-              <span>Total</span>
-              <span id="cart-total">R$ 0,00</span>
-            </div>
-            <div class="checkout-form">
-              <h3>Dados para o pedido</h3>
-
-              <input type="text" id="cliente-nome" placeholder="Seu nome" />
-
-              <input type="tel" id="cliente-telefone" placeholder="Telefone" />
-
-              <textarea
-                id="cliente-endereco"
-                placeholder="Endereço completo"
-                rows="3"
-              ></textarea>
-
-              <select id="forma-entrega">
-                <option value="Retirada">Retirada na loja</option>
-                <option value="Entrega">Entrega</option>
-              </select>
-
-              <select id="forma-pagamento">
-                <option value="Dinheiro">Dinheiro</option>
-                <option value="Pix">Pix</option>
-                <option value="Débito">Cartão de Débito (sem juros)</option>
-                <option value="Crédito">Cartão de Crédito</option>
-              </select>
-
-              <p
-                id="aviso-credito"
-                style="display: none; color: #666; font-size: 14px"
+              <button
+                class="btn-primary btn-add-cart-detail"
+                id="btn-add-detalhe"
               >
-                ℹ️ Pagamentos no cartão de crédito podem ter uma pequena taxa
-                adicional.
+                Adicionar ao Carrinho
+              </button>
+
+              <p class="add-confirmacao" id="confirmacao-adicionado">
+                ✓ Produto adicionado ao carrinho!
               </p>
             </div>
+          </div>
+        </div>
+        <!-- FIM DE #conteudo-detalhe -->
 
-            <!-- Botão de checkout principal -->
-            <button
-              class="btn-primary btn-checkout"
-              onclick="finalizarPedido()"
+        <!-- ============ CONFIRMAÇÃO DO PEDIDO ============ -->
+        <!-- Escondida por padrão. Aparece quando a pessoa clica em
+             "Finalizar Pedido" no carrinho: mostra os itens e os dados
+             preenchidos antes de realmente enviar pelo WhatsApp. -->
+        <div id="conteudo-confirmacao" style="display: none">
+          <button class="back-button" onclick="voltarParaCarrinho()">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
             >
-              Finalizar Pedido
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Voltar e revisar
+          </button>
+
+          <div class="confirmacao-content">
+            <h2>Confirme seu pedido</h2>
+            <p class="confirmacao-subtitulo">
+              Revise os itens e seus dados antes de enviar pelo WhatsApp.
+            </p>
+
+            <h3 class="confirmacao-secao-titulo">Itens do pedido</h3>
+            <!-- COMENTÁRIO: o JS preenche esta lista com base no carrinho -->
+            <div class="confirmacao-itens" id="confirmacao-itens-lista"></div>
+
+            <div class="confirmacao-total">
+              <span>Total (com frete)</span>
+              <span id="confirmacao-total-valor">R$ 0,00</span>
+            </div>
+
+            <h3 class="confirmacao-secao-titulo">Seus dados</h3>
+            <div class="confirmacao-dados">
+              <p><strong>Nome:</strong> <span id="confirmacao-nome"></span></p>
+              <p><strong>Telefone:</strong> <span id="confirmacao-telefone"></span></p>
+              <p><strong>Endereço:</strong> <span id="confirmacao-endereco"></span></p>
+              <p><strong>Entrega:</strong> <span id="confirmacao-entrega"></span></p>
+              <p><strong>Pagamento:</strong> <span id="confirmacao-pagamento"></span></p>
+            </div>
+
+            <button
+              class="btn-primary btn-confirmar-pedido"
+              onclick="confirmarEnvioPedido()"
+            >
+              Confirmar e enviar pelo WhatsApp
             </button>
           </div>
         </div>
-      </aside>
-    </main>
+        <!-- FIM DE #conteudo-confirmacao -->
+
+      </div>
+      <!-- FIM DE .content-left -->
+
+      <!-- COLUNA DIREITA: CARRINHO DE COMPRAS FIXADO (Perfeito para desktop, vira overlay/gaveta no mobile) -->
+      <!-- Fica FORA de #conteudo-home / #conteudo-detalhe de propósito: assim
+           o botão de carrinho no cabeçalho sempre funciona, esteja você
+           vendo a home ou a página de um produto. -->
+      <aside class="cart-sidebar" id="cart-sidebar">
+          <div class="cart-container">
+            <div class="cart-header">
+              <h2>Meu Carrinho</h2>
+              <!-- Botão de fechar (relevante principalmente no Mobile) -->
+              <button class="close-cart-btn" aria-label="Fechar carrinho">
+                &times;
+              </button>
+            </div>
+
+            <!-- Lista de itens do Carrinho -->
+            <!-- COMENTÁRIO: O JavaScript irá limpar e popular esta div conforme o cliente adiciona itens -->
+            <div class="cart-items" id="carrinho-itens">
+              <!-- Item de Exemplo 1 -->
+              <div class="cart-item">
+                <button class="remove-item" title="Remover item">&times;</button>
+              </div>
+            </div>
+
+            <!-- Resumo financeiro do Carrinho -->
+            <div class="cart-summary">
+              <h3>Resumo do Pedido</h3>
+              <div class="summary-line">
+                <span>Subtotal</span>
+                <span id="cart-subtotal">R$ 0,00</span>
+              </div>
+              <div class="summary-line">
+                <span>Frete</span>
+                <span id="cart-frete">R$ 0,00</span>
+              </div>
+              <div class="summary-line total-line">
+                <span>Total</span>
+                <span id="cart-total">R$ 0,00</span>
+              </div>
+              <div class="checkout-form">
+                <h3>Dados para o pedido</h3>
+
+                <input type="text" id="cliente-nome" placeholder="Seu nome" />
+
+                <input type="tel" id="cliente-telefone" placeholder="Telefone" />
+
+                <textarea
+                  id="cliente-endereco"
+                  placeholder="Endereço completo"
+                  rows="3"
+                ></textarea>
+
+                <select id="forma-entrega">
+                  <option value="Retirada">Retirada na loja</option>
+                  <option value="Entrega">Entrega</option>
+                </select>
+
+                <select id="forma-pagamento">
+                  <option value="Dinheiro">Dinheiro</option>
+                  <option value="Pix">Pix</option>
+                  <option value="Débito">Cartão de Débito (sem juros)</option>
+                  <option value="Crédito">Cartão de Crédito</option>
+                </select>
+
+                <p
+                  id="aviso-credito"
+                  style="display: none; color: #666; font-size: 14px"
+                >
+                  ℹ️ Pagamentos no cartão de crédito podem ter uma pequena taxa
+                  adicional.
+                </p>
+              </div>
+
+              <!-- Botão de checkout principal -->
+              <!-- COMENTÁRIO: agora abre a página de revisão do pedido em vez
+                   de ir direto pro WhatsApp. O envio real só acontece depois
+                   que a pessoa confirma na tela seguinte. -->
+              <button
+                class="btn-primary btn-checkout"
+                onclick="abrirConfirmacaoPedido()"
+              >
+                Finalizar Pedido
+              </button>
+            </div>
+          </div>
+        </aside>
+      </main>
 
     <!-- BOTÃO FLUTUANTE DE CARRINHO (Apenas visível em telas mobile para facilitar abertura) -->
     <button class="mobile-cart-fab" id="mobile-cart-fab">

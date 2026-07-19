@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <!-- Círculo/Letra O Verde Escura -->
+  <path d="M50,25 C36.2,25 25,36.2 25,50 C25,63.8 36.2,75 50,75 C63.8,75 75,63.8 75,50 C75,44 72.8,38.5 69.2,34.3" 
+        fill="none" stroke="#0D5C1D" stroke-width="14" stroke-linecap="round"/>
+  
+  <!-- Folha Verde Clara -->
+  <path d="M65,35 C65,35 72,15 85,12 C85,12 85,28 72,37 C67.5,40 65,35 65,35 Z" 
+        fill="#76B852"/>
+  <path d="M65,35 C72,28 85,12 85,12" 
+        fill="none" stroke="#529434" stroke-width="2" stroke-linecap="round"/>
+</svg>
