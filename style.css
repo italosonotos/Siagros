@@ -1223,3 +1223,96 @@ body {
         padding: 36px;
     }
 }
+/* --------------------------------------------------
+   11. RODAPÉ / FOOTER
+   -------------------------------------------------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Compensa a altura da navbar fixa ao rolar até uma seção */
+#produtos-secao,
+#categorias-secao,
+#rodape-contato {
+    scroll-margin-top: 90px;
+}
+
+.site-footer {
+    background-color: var(--primary-hover);
+    color: #fff;
+    margin-top: 60px;
+    padding: 50px 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-bottom: 40px;
+}
+
+.footer-logo {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.footer-logo span {
+    color: #A5D6A7;
+    font-weight: 400;
+}
+
+.footer-tagline {
+    font-size: 0.9rem;
+    color: #C8E6C9;
+    line-height: 1.6;
+}
+
+.footer-col h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+    color: #fff;
+}
+
+.footer-col p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: #E8F5E9;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.footer-social {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: opacity 0.2s;
+}
+
+.footer-social:hover {
+    opacity: 0.8;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding: 18px 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #C8E6C9;
+}
+
+/* Desktop: colunas lado a lado */
+@media (min-width: 800px) {
+    .footer-container {
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    }
+}
