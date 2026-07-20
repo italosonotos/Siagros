@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   carregarCarrinho(); // ...só então carrega o carrinho (precisa dos produtos pra exibir nome/preço)
   configurarEventosCarrinho();
   configurarFiltros();
+  configurarHeroCarousel(); // inicia o carrossel do banner principal
 });
 
 async function carregarProdutos() {
@@ -213,6 +214,48 @@ function configurarEventosCarrinho() {
       cartSidebar.classList.remove("aberto");
     });
   }
+}
+
+// ---------- CARROSSEL DO HERO BANNER ----------
+// Alterna automaticamente entre os slides do #hero-banner a cada 5s.
+// Os dots (.carousel-dots .dot) também permitem trocar de slide manualmente.
+
+let heroSlideAtual = 0;
+let heroIntervalId = null;
+
+function configurarHeroCarousel() {
+  const heroSlides = document.querySelectorAll("#hero-banner .hero-slide");
+  const heroDots = document.querySelectorAll("#hero-banner .dot");
+
+  if (heroSlides.length === 0) return; // sem slides, não faz nada
+
+  function mostrarHeroSlide(index) {
+    heroSlides.forEach((slide) => slide.classList.remove("active"));
+    heroDots.forEach((dot) => dot.classList.remove("active"));
+
+    heroSlides[index].classList.add("active");
+    if (heroDots[index]) heroDots[index].classList.add("active");
+
+    heroSlideAtual = index;
+  }
+
+  function proximoHeroSlide() {
+    mostrarHeroSlide((heroSlideAtual + 1) % heroSlides.length);
+  }
+
+  function iniciarAutoPlay() {
+    clearInterval(heroIntervalId);
+    heroIntervalId = setInterval(proximoHeroSlide, 5000);
+  }
+
+  heroDots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      mostrarHeroSlide(index);
+      iniciarAutoPlay(); // reinicia o timer ao clicar manualmente
+    });
+  });
+
+  iniciarAutoPlay();
 }
 
 // ---------- FILTROS: CATEGORIA + BUSCA ----------
